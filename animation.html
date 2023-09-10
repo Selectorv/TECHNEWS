@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        .home{
+            height: 100vh;
+            background: white;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 50px 1px;
+            position: relative;
+            margin:0 ;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            margin-top: 0;
+            background-color: rgb(236, 236, 241);
+           
+            
+        }
+        .home::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height:100% ;
+            z-index: 1;
+           /* background-color: rgb(222, 236, 240);*/
+            
+            
+        }
+        .home .home-text{
+        
+            position: relative;
+            text-align: center;
+            z-index: 2;
+             line-height: 46px;
+            font-size: 56px;
+            font-weight: 400;
+            margin: 0 0 10px;
+            
+
+        }
+        .home .home-text h1{
+            
+            background: linear-gradient(to bottom, darkblue,blue);
+            color: white;
+            font-size: 50px;
+            line-height: 56px;
+            margin: 0 0 40px;
+            font-weight: 600;
+        }
+       
+        .home .home-text p{
+            margin: 0;
+            width: 60%;
+            align-items: center;
+            margin-left: 20%;
+            justify-content: center;
+            margin-bottom: 50px;
+            
+            
+            
+        }
+        .home .home-text p span{
+            font-size: 40px;
+            font-family: Georgia, 'Times New Roman';
+            color: black;
+            display: inline-block;
+            font-weight: 700;
+            line-height: 46px;
+            display: none;
+            
+        }
+        h3{
+            text-align: left;
+            padding-left: 10%;
+            line-height: 1.7rem;
+            
+        }
+        .home .home-text p span.text-in{
+            display: block;
+            animation: textIn .5s ease;
+        }
+        .home .home-text p span.text-out{
+            animation: textOut .5s ease;
+        }
+        p{
+            margin-left: 40px;
+            margin-bottom:5px ;
+        }
+
+        @keyframes textIn{
+            0%{
+                transform: translateY(100%);
+            }
+            100%{
+                transform: translateY(0%);
+            }
+        }
+         @keyframes textOut{
+            0%{
+                transform: translateY(0%);
+            }
+            100%{
+                transform: translateY(-100%);
+            }
+        }
+        @media(max-width:1080px){
+            .home .home-text h1,
+            .home .home-text p span{
+                width: 100%;
+                font-size: 30px;
+            }
+            .container{
+                width: 100%;
+            }
+            .home{
+                width: 100%;
+                padding: 0;
+            }
+
+        }
+        
+    </style>
+</head>
+
+<body>
+    
+    <section class="home">
+        <div class="container"> 
+            <div class="row">
+                <div class="home-text">
+                    <h1>Top news at a glance</h1>
+                    <p class="animate-text">
+                    <span>Breaking News</span>
+                    <span>Sportlight </span>
+                    <span>Videos</span>
+                    <span>Life and Style</span>
+                    </p>
+                    <hr>
+                </div>
+            
+                        <h3>G20  includes Africa Union in historic decision
+                            <cite>BBC</cite>
+                        </h3>
+                        <h3>Musk 'committed evil' with Starlink order, says Ukrain official <a href=" https://www.bbc.com/news/world-africa-66761543 "></a>
+                            <cite>The Gurdian</cite>
+                        </h3>
+                        <h3>Hundreds killed after powerful earthquake strikes Morocco
+                            <cite>CNN</cite>
+                        </h3>
+                        <h3>Toronto film festival kicks off with Miyazaki's 'The Boy and the Heron', few stars
+                            <cite>Reuters</cite>
+                        </h3>
+                        <hr>
+                <P>Images:<cite>pexels</cite></P>
+                        
+        
+            </div>
+        </div>
+    </section>
+    
+</body>
+<script>
+    const txts=document.querySelector(".animate-text").children,
+     txtsLen=txts.length;
+     let index=0;
+     const textInTimer=3400,
+            textOutTimer=3200;
+
+     function animateText(){
+        for(let i=0; i<txtsLen; i++){
+        txts[i].classList.remove("text-in", "text-out");
+        }
+       txts[index].classList.add("text-in");
+
+        setTimeout(function(){
+            txts[index].classList.add("text-out");
+           },textOutTimer)
+           
+           setTimeout(function(){
+
+        if(index == txtsLen-1){
+            index=0;
+        }
+        else{
+            index++;
+        }
+        animateText();
+
+    }, textInTimer);
+     }
+     window.onload=animateText;
+</script>
+
+
+
+</html>

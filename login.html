@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=d, initial-scale=1.0">
+    <title>login form</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 12px 100px;
+        background: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 99;
+    }
+    h1{
+        font-size: 40px;
+        color: rgb(26,131,167);
+    }
+    h1::first-letter{
+        font-size: 45px ;
+        color: red;
+    }
+    .navigation a{
+        position: relative;
+        
+        font-size: 20px;
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+        margin: 2px;
+
+    }
+    .navigation a:hover{
+        color: rgb(26, 131, 222);
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: rgb(221, 243, 250) ;
+        background-size: cover ;
+        background-position: center;
+        
+    }
+    
+
+     [type=text],select{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+     [type=submit]{
+        width: 100%;
+        background-color: #4cAF50;
+        color: white;
+        padding: 14PX 20PX;
+        margin: 8PX 0;
+        border: none;
+        border-radius: 4PX;
+        cursor: pointer;
+    }
+    input[type=submit]:hover{
+        background-color: red;
+    }
+    
+    div{
+        position: relative;
+        width: 450px;
+        height: 440px;
+        background-color: #f1f1f1f1;
+        color: black;
+        border-radius: 20px;
+        backdrop-filter: blur(100px);
+        padding: 20px;
+        justify-content: center;
+        margin: 50px, 20px;
+        box-shadow: 0px 5px 12px 0 rgb( 80,19,242,0.3);
+        justify-content: center;
+        align-items: center;
+    }
+    @media(max-width:660px){
+        .navigation{
+            display: none;
+        }
+    }
+    
+</style>
+<body>
+    <header>
+        <h1>Technews</h1>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">contact</a>
+
+        </nav>
+    </header>
+
+
+
+
+    <div>
+        <form action="https://formsubmit.co/liliannandy44@gmail.com" method="POST">
+            <label for="frame">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name...">
+
+            <label for="lname">Last Name</label>
+            <input type="text" name="LastName" id="lname" placeholder="Your last name">
+           
+            <label for="email">Email</label>
+            <input type="text" name="" id="" placeholder="example@gmail.com"> 
+
+            <label for="country">Country</label>
+            <input type="text" placeholder="Country">
+                      <input type="submit" value="submit">
+
+
+
+
+
+            
+        </form>
+    </div>
+    
+    
+</body>
+</html>
