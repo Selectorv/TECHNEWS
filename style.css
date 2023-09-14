@@ -52,9 +52,13 @@ nav ul li:hover{
 }
 
 .inputSearh{
-   display: flex;
+   display: block;
+   border: 1px solid red;
 
 }
+form  i{
+   border: 1px solid red;
+ }
 
 .inputSearch input[type=text]{
     padding: 10px;
@@ -75,12 +79,14 @@ nav ul li:hover{
     border-left:none ;
     
 }
-.inputSearch::after{
+.inputSearch .search-bar .input[type=text]::after{
     content: "";
     clear: both;
     display: table;
     border: 1px green;
 }
+
+
 
 
 
