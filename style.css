@@ -56,9 +56,7 @@ nav ul li:hover{
    border: 1px solid red;
 
 }
-form  i{
-   border: 1px solid red;
- }
+
 
 .inputSearch input[type=text]{
     padding: 10px;
