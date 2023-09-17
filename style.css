@@ -308,6 +308,7 @@ article{
 /*main container right*/
 .main-container-right{
     padding: 30px 10px;
+    background-color: cornsilk;
 }
 
 .main-container-right > h2{
@@ -354,6 +355,22 @@ article div{
 .main-container-right a{
     text-decoration: none;
     color: red;
+}
+
+.main-container-right .advert {
+    background-color: white;
+    width: 100%;
+
+    
+}
+.main-container-right h3{
+    font-size: 18px;
+    padding: 10px 0;
+    margin-left: 40%;
+
+}
+.main-container-right p{
+    padding-top: 10px;
 }
 
 
@@ -408,6 +425,14 @@ article div{
     footer{
         display: block;
     }
+    .main-container-right .advert iframe{
+        min-width: 100%;
+        
+    }
+    .main-container-right iframe{
+        width: 100%;
+    }
+    
 }
     
 
@@ -426,6 +451,8 @@ article div{
         grid-template-columns: repeat(2, 1fr);
     
     }
+    
+
 
 
 
