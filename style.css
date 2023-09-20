@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 body{
+    max-width: 100%;
     min-height: 100vh;
     font-family: Georgia, 'Times New Roman', Times, serif ;
     margin: 0;
@@ -102,19 +103,27 @@ nav ul li:hover{
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
-    padding: 10px 0;
+    padding: 2px 0;
     margin-top: 85px ;
+    min-width: 100%;
 }
 .banner iframe{
-    width: 100%;
-    padding-left: 0;
+    min-width: 100%;
+    padding: 0;
     height: 100vh;
-    
+    margin: 0;   
 
 }
 .banner-main-content{
+  width: 100%;
+    margin: 0;
+}
+ .banner-main-content iframe{
+    min-width: 100%;
+}
+.banner-main-content{
     overflow: hidden;
-    padding: 0 2rem;
+    padding: 0 0.5rem;
     line-height: 1.7rem;
     
 }
@@ -264,10 +273,10 @@ main a:hover{
 }
 /*main container*/
 .main-container-left{
-    padding: 30px 10px;
+    padding: 20px 0;
 }
 .main-container-left iframe{
-    width: 100%;
+    max-width: 100%;
     
 } 
 .main-container-left > h2{
@@ -284,7 +293,7 @@ main a:hover{
 }
 .main-container-left
 article{
-    padding: 10px;
+    padding: 1px;
 }
 .container-top-left{
     padding: 15px 30px;
@@ -396,7 +405,10 @@ article div{
         display: none;
     }
     .main-container-right iframe{
-        width: 100%;
+        min-width: 100%;
+    }
+    .main-container-left{
+        max-width: 100%;
     }
     
 
@@ -432,7 +444,13 @@ article div{
     footer{
         display: block;
     }
-    .main-container-right iframe{
+    .banner iframe{
+        min-width: 100%;
+    }
+   .main-container-right iframe{
+        max-width: 100%;
+    }
+    .main-container-left {
         min-width: 100%;
     }
     
@@ -455,6 +473,13 @@ article div{
         grid-template-columns: repeat(2, 1fr);
     
     }
+    .banner iframe{
+        min-width: 100%;
+        margin: 0;
+    }
+    .main-container-left {
+        min-width: 100%;
+    }
 
 
 }
@@ -472,6 +497,8 @@ article div{
     .menuBtn{
         display: none;
     }
+    
+    
     
 }
 
