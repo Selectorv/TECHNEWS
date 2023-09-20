@@ -99,7 +99,7 @@ nav ul li:hover{
 /*banner*/
 .banner{
 
-    height: auto;
+    height: 100%;
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
@@ -111,11 +111,12 @@ nav ul li:hover{
     min-width: 100%;
     padding: 0;
     height: 100vh;
-    margin: 0;   
+    margin: 0;
+    padding-right: 5px;   
 
 }
 .banner-main-content{
-  width: 100%;
+  min-width: 100%;
     margin: 0;
 }
  .banner-main-content iframe{
