@@ -4,13 +4,15 @@
     box-sizing: border-box;
 }
 body{
-    min-width: 100%;
+    width: 100%;
     height: auto;
     font-family: Georgia, 'Times New Roman', Times, serif ;
     margin: 0;
     background: #f5f6f9;
     display: flex;
     flex-direction: column;
+    
+    
 }
 header{
     position: fixed;
@@ -286,6 +288,7 @@ main a:hover{
 /*main container*/
 .main-container-left{
     padding: 20px 0;
+    margin-left: 0;
 }
 .main-container-left iframe{
     width: 100%;
@@ -328,6 +331,7 @@ article{
     height: 40%;
 
 }
+
 /*main container right*/
 .main-container-right{
     padding: 10px 5px;
@@ -362,10 +366,11 @@ article:last-child{
     font-weight: 300;
     font-size: 12px;
     align-self: center;
+    
 }
 .main-container-right article h2{
     font-size: 18PX;
-    padding: 10PX 0;
+    padding: 10px 0;
     font-family: var(--heading);
 }
 .main-container-right
@@ -406,11 +411,11 @@ article div{
     }
     
     .container-bottom-left {
-        min-width: 100%;
+        width: 100%;
        margin: 20px;
     }
     .container-bottom-left img{
-        max-width: 100%;
+        width: 100%;
     }
     .main-container-right p{
         margin-left: 20px;
@@ -422,10 +427,10 @@ article div{
 
 
 @media(min-width:768px){
+    
     .banner-sub-content{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        padding-right: 10px;
         text-align: center;
         
         
@@ -439,8 +444,8 @@ article div{
     
     }
     .container-bottom-left img{
-        min-width: 100%;
-        padding: 10px;
+        width: 100%;
+
     }
     
     
@@ -468,7 +473,7 @@ article div{
         display: none;
     }
     .inputSearch{
-        display: none;
+        display: flex;
     }
 
 
@@ -665,6 +670,7 @@ footer p a:hover{
     
 }
 
+
 @media (max-width:767px){
     
     .footer_content .container{
@@ -684,17 +690,22 @@ footer p a:hover{
     }
 
 
+
 }
 
 
 
 @media all and (max-width:700px){
 
+
     header{
         padding: 5px 30px;
     }
     .inputSearch{
         display: none;
+    }
+    .container-bottom-left img{
+        width: 100%;
     }
     
     
