@@ -6,6 +6,7 @@
     <title>Animations</title>
     <style>
         body{
+            padding: 0;
             margin: 0;
         }
         *{
@@ -17,7 +18,6 @@
             background: white;
             display: flex;
             flex-wrap: wrap;
-            padding: 4px 5px;
             position: relative;
         
             
@@ -63,7 +63,7 @@
             color: white;
             font-size: 50px;
             line-height: 56px;
-            margin: 0 0 10px;
+            margin: 0 0 5px;
             font-weight: 600;
         }
        
@@ -71,7 +71,7 @@
             margin: 0;
             width: 60%;
             align-items: left;
-            margin-left: 5%;
+            margin-left: 0;
             justify-content: center;
             margin-bottom: 50px;
             
@@ -117,7 +117,11 @@
         }
         h5{
             text-align: center;
-            margin-left: 30%;
+            margin-left: 10%;
+        }
+        .advert{
+            width: 100%;
+            height: auto;
         }
 
         @keyframes textIn{
@@ -147,7 +151,7 @@
                 height: auto;
             }
             .home{
-                width: 100%;
+                min-width: 100%;
                 height: auto;
                 padding: 0;
             }
@@ -193,10 +197,17 @@
                             <cite>BBC</cite>
                         </h3></li>
                         </ul>
+            
                         <hr>
             </div>
         </div>
+        <div class="advert">
         <h5>ADVERTISEMENT</h5>
+
+        
+
+        </div>
+        
     </section>
     
     

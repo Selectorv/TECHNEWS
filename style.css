@@ -3,9 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
-    width: 100%;
-    height: auto;
+    min-width: 100%;
+    min-height: 100vh;
     font-family: Georgia, 'Times New Roman', Times, serif ;
     margin: 0;
     background: #f5f6f9;
@@ -15,7 +16,7 @@ body{
     
 }
 header{
-    position: fixed;
+    position: relative;
     background-color: #fff;
     top: 0;
     bottom: 0;
@@ -113,16 +114,13 @@ nav ul li a::after{
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
-    padding: 2px 0;
-    margin-top: 20px;
-    min-width: 100%;
+    margin-top: 0;
 }
 .banner iframe{
     min-width: 100%;
     padding: 0;
     height: 100vh;
-    margin-top: 80px;
-    padding-right: 5px;   
+     
 
 }
 .banner-main-content{
@@ -169,10 +167,10 @@ nav ul li a::after{
     color: #0d0a0b;
 }
 .banner-sub-content{
-    width: 100%;
+    min-width: 100%;
      position: relative;
     height: auto;
-    margin-top: 80px;
+    
 
 }
  
@@ -181,6 +179,7 @@ nav ul li a::after{
      height: auto;
      display: block;
      align-items: center;
+     margin-top: 0;
     
      
      
@@ -197,7 +196,7 @@ nav ul li a::after{
     background: #ffff;
     padding: 20px;
     font-size: 12px;
-    margin: 20px 0;
+    margin: 5px 0;
 }
 .current-news-head h3{
     padding: 6px;
@@ -287,11 +286,11 @@ main a:hover{
 }
 /*main container*/
 .main-container-left{
-    padding: 20px 0;
+    padding: 10px 0;
     margin-left: 0;
 }
 .main-container-left iframe{
-    width: 100%;
+     width: 100%;
     
 } 
 .main-container-left > h2{
@@ -308,7 +307,8 @@ main a:hover{
 }
 .main-container-left
 article{
-    padding: 1px;
+    
+    padding: 10px;
 }
 .container-top-left{
     padding: 8px 14px;
@@ -319,17 +319,20 @@ article{
 }
 .container-bottom-left{
     background: #f3f3f3;
-    margin: 15px 30px;
+    
+    max-width: 100%;
 }
 
 .container-bottom-left a{
     text-decoration: none;
     color: #7ac64a;
 }
+.container-bottom-left article {
+    min-width: 100%;
+
+}
 .container-bottom-left img{
     width: 100%;
-    height: 40%;
-
 }
 
 /*main container right*/
@@ -381,7 +384,7 @@ article p{
 }
 .main-container-right
 article div{
-    margin-right: 10px;
+    margin-right: 0;
 }
 .main-container-right a{
     text-decoration: none;
@@ -411,14 +414,14 @@ article div{
     }
     
     .container-bottom-left {
-        width: 100%;
-       margin: 20px;
+        min-width: 100%;
+    
     }
     .container-bottom-left img{
         width: 100%;
     }
     .main-container-right p{
-        margin-left: 20px;
+        margin-left: 1px;
     }
 }
 
@@ -431,27 +434,19 @@ article div{
     .banner-sub-content{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        text-align: center;
-        
+        text-align: center;   
         
     }
     
     .container-bottom-left{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        
-        
-    
+        min-width: 100%;
     }
     .container-bottom-left img{
-        width: 100%;
+        min-width: 100%;
 
     }
-    
-    
-
-    
-
 }
 @media(min-width:992px){
     main{
@@ -648,9 +643,7 @@ footer p a:hover{
     .inputSearch{
         display: none;
     }
-    .main-container-left iframe{
-        max-width: 100%;
-    }
+    
 
 }
 @media(max-width:800px){
@@ -659,7 +652,7 @@ footer p a:hover{
     }
     .menuBtn{
         display: block;
-        margin-right: 10px;
+        margin-right: 5px;
     }
     
    .mobile-hidden{
@@ -705,11 +698,20 @@ footer p a:hover{
         display: none;
     }
     .container-bottom-left img{
+        min-width: 100%;
+    }   
+}
+@media(max-width:460px){
+    .container-bottom-left {
         width: 100%;
+        
     }
-    
-    
-    
+    .logo h1{
+        font-size: 35px;
+    }
+    .menuBtn{
+        padding-right: 2px;
+    }
     
 }
 /*mobile menu*/
