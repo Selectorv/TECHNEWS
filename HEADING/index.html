@@ -8,6 +8,7 @@
         body{
             padding: 0;
             margin: 0;
+            display: flex; 
         }
         *{
             box-sizing: border-box;
@@ -43,7 +44,7 @@
             
         }
         .home .home-text{
-           max-width: 100%;
+           min-width: 100%;
             position: relative;
             text-align: center;
             z-index: 2;
@@ -51,7 +52,7 @@
             font-size: 54px;
             font-weight: 400;
             margin: 0 0 10px;
-            padding: 10px;
+            padding: 1px;
             
         
             
@@ -63,31 +64,29 @@
             color: white;
             font-size: 50px;
             line-height: 56px;
-            margin: 0 0 5px;
+            margin: 0 0 1px;
             font-weight: 600;
         }
        
         .home .home-text p{
             margin: 0;
-            width: 60%;
+           width: 100%;
             align-items: left;
             margin-left: 0;
             justify-content: center;
-            margin-bottom: 50px;
+            margin-bottom: 20px;
             
             
             
         }
         .home .home-text p span{
-            font-size: 20px;
+            /*font-size: 10px;*/
             font-family: Georgia, 'Times New Roman';
-            color: black;
+            color: red;
             display: inline-block;
-            font-weight: 500;
-            line-height: 40px;
             display: none;
             align-items: center;
-            margin-left: 20%;
+            
             
         }
         h3{
@@ -109,12 +108,7 @@
         .home .home-text p span.text-out{
             animation: textOut .5s ease;
         }
-        p{
-            padding-left: 10px;
-            margin-bottom:5px ;
-            font-size: 30px;
-            
-        }
+    
         h5{
             text-align: center;
             margin-left: 10%;
@@ -123,11 +117,72 @@
             width: 100%;
             height: auto;
         }
-        .advert{
-            max-width: 100%;
-            height: auto;
+        .slide-container{
+            position: relative;
+            width: 800px;
+            height: 300px;
+            border: 3px solid #ede6d6;
+            box-shadow: 0 0 8px 2px rgba(0,0,0,0.2);
+            
         }
+        .slide-container .slides{
+            width: 100%;
+            height: calc(100% - 40px);
+            position: relative;
+            align-items: center;
+            overflow: hidden;
+        }
+       .slide-container .slides img{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            object-fit: cover;
 
+            
+        }
+        .slide-container .slides img:not(.active){
+            top: 0;
+            left: -100%;
+        }
+        span.next, span.prev{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 10px;
+            color: #eee;
+            font-size: 24px;
+            font-weight: bold;
+            transition: 0.5s;
+            border-radius: 3px;
+            user-select: none;
+            cursor: pointer;
+            z-index: 1;
+        }
+        span.next{
+            right: 20px;
+        }
+        span.prev{
+            left: 20px;
+        }
+        span.next:hover, span.prev:hover{
+            background-color: #ede6d6;
+            opacity: 0.8;
+        }
+        .Top-headline{
+            background-color: rgb(222, 3, 3);
+        }
+        .Top-headline h3{
+            font-size: 16px;
+            color: orange;
+            padding-bottom: 0;
+        }
+        .Top-headline p{
+
+            font-size: 18px;
+            color: white;
+            padding-left: 10px;
+        }
+      
         @keyframes textIn{
             0%{
                 transform: translateY(100%);
@@ -144,6 +199,40 @@
                 transform: translateY(-100%);
             }
         }
+        @keyframes next1{
+            from{
+                left: 0%;
+            }
+            to{
+                left: -100%;
+            }
+        }
+         @keyframes next2{
+            from{
+                left:100%;
+            }
+            to{
+                left: 0%;
+            }
+        }
+         @keyframes prev1{
+            from{
+                left: 0%;
+            }
+            to{
+                left: 100%;
+            }
+        }
+         @keyframes prev2{
+            from{
+                left: -100%;
+            }
+            to{
+                left: 0%;
+            }
+        }
+
+
         @media(max-width:1080px){
             .home .home-text h1,
             .home .home-text p span{
@@ -159,11 +248,21 @@
                 height: auto;
                 padding: 0;
             }
+            .slide-container{
+                margin-left: 10%;
+            }
+            
         }
             @media(max-width:780px){
              .container{
                 min-width: 100%;
              }
+            
+                .slide-container{
+                    width: min(30rem, 100%);
+                    margin-left: 0;
+                }
+                
             }
 
         
@@ -177,38 +276,49 @@
         <div class="container"> 
             <div class="row">
                 <div class="home-text">
-                    <h1>Top news at a glance</h1>
-                    <p class="animate-text">
-                    <span>Breaking News</span>
-                    <span>Sportlight </span>
-                    <span>Watch Live </span>
-                    <span>Videos</span>
-                    <span>Life and Style</span>
-                    </p>
-                    <hr>
+                    <h1>NEWS AT A GLANCE</h1>
+                    <!--<p class="animate-text">
+                    <span>Captured Israeli tank in Gaza</span>
+                    <span>Rockets launched from Gaza streak Across sky</span>
+                    <span>Driver lose control om motorway</span>
+                    <span>Tupac's murder suspect  gets arrested</span>
+                    <span>One-minute World News</span>
+                    </p>-->
+                
                 </div>
-                        <ul>
-                        <li> <h3>Italy plans for mass evacuation as quakes continue around supervolcano.</a>
-                            <cite>The Gurdian</cite>
-                        </h3></li>
-                          <li><h3>Man pleads not guilty to stalking woman by plane for four years.
-                            <cite>The Gurdian</cite>
-                        </h3>
-                        <li><h3>Nobel Peace Prize Winner about to be announced.
-                            <cite>CNN</cite>
-                        </h3></li>
-                        <li><h3>At least 51 people were killed in Thursday's Russian missile strike.
-                            <cite>BBC</cite>
-                        </h3></li>
-                        </ul>
-            
-                        <hr>
+                <div class="slide-container">
+                    <div class="slides">
+                <img src="../image/06f297933b875641719f6e8a9a0591e0.jpg"  class="active">
+                <img src="../image/26 Thriller Books We Couldn't Put Down This Year.jpeg" alt="">
+                <img src="../image/download.jpeg">
+                <img src="../image/89b3f96bb8406e32d495cdda9764f3d8.jpg" alt="">
+                <img src="../image/2e40027b9b156589cfbccbf7b33d3bc7.jpg" alt="">
+                </div> 
+
+                <div class="buttons">
+                    <span class="next">&#10095;</span>
+                    <span class="prev">&#10094;</span>
+
+                </div>
+                
+                </div>  
             </div>
         </div>
-        <div class="advert">
-        <h5>ADVERTISEMENT</h5>
-
+        <div class="Top-headline">
+        <h3>USA</h3>
+        
+        <P>Ex-president allegedly shared potentially sensitive information <br>
+        about US subs with Australian billionaire</P>
+        <hr>
+        <h3>UNICEF</h3>
+        <P>43 Million children displaced in past six years </P>
+        <hr>
+        <h3>ITALY</h3>
+        <P>Country plans for mass evacuation as quakes continue around supervolcano</P>
         </div>
+    
+        
+        
         
     </section>
     
@@ -219,8 +329,8 @@
     const txts=document.querySelector(".animate-text").children,
      txtsLen=txts.length;
      let index=0;
-     const textInTimer=3400,
-            textOutTimer=3200;
+     const textInTimer=3800,
+            textOutTimer=3600;
 
      function animateText(){
         for(let i=0; i<txtsLen; i++){
@@ -245,6 +355,63 @@
     }, textInTimer);
      }
      window.onload=animateText;
+</script>
+<script type="text/javascript">
+
+    let slideImages =  document.querySelectorAll('img');//access the images
+    let next = document.querySelector('.next');
+    let prev = document.querySelector('.prev');
+
+    //access the indicators
+    let dots =  document.querySelectorAll('.dot')
+
+    var counter = 0;
+
+    //code for next button
+    next.addEventListener('click', slideNext);
+    function slideNext(){
+     slideImages[counter].style.animation = 'next1 0.5s ease-in forwards';
+     if(counter >= slideImages.length-1){
+        counter = 0;
+     }
+     else{
+        counter++;
+     }
+     slideImages[counter].style.animation = 'next2 0.5s ease-in forwards';
+    }
+ //code for prev button
+ prev.addEventListener('click', slidePrev);
+    function slidePrev(){
+     slideImages[counter].style.animation = 'prev1 0.5s ease-in forwards';
+     if(counter == 0){
+        counter = slideImages.length-1;
+     }
+     else{
+        counter--;
+     }
+     slideImages[counter].style.animation = 'prev2 0.5s ease-in forwards';
+    }
+    //Auto sliding
+    function autoSliding(){
+        deletInterval = setInterval(timer, 3000);
+        function timer(){
+            slideNext();
+        }
+    }
+    autoSliding();
+    
+    //stop auto sliding when mouse is over
+    const container = document.querySelector('.slide-container');
+    container.addEventListener('mouseover', function(){
+        clearInterval(deletInterval);
+    });
+
+    //Resume sliding when mouse is out
+    container.addEventListener('mouseout', autoSliding);
+
+
+
+
 </script>
 
 
