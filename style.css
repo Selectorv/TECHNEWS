@@ -125,15 +125,15 @@ nav ul li a::after{
 } 
 .slide-container{
     position: relative;
-     width: 430px;
+     width: 470px;
      height: 300px;
-     border: 3px solid #ede6d6;
-     box-shadow: 0 0 8px 2px rgba(0,0,0,0.2);
+     border: 1px solid #ede6d6;
+    /* box-shadow: 0 0 8px 2px rgba(0,0,0,0.2);*/
      
  }
  .slide-container .slides{
     width: 100%;
-     height: calc(100% - 60px);
+     height: calc(100% - 40px);
      position: relative;
      align-items: center;
      overflow: hidden;
@@ -144,14 +144,15 @@ nav ul li a::after{
      height: 100%;
      position: absolute;
      object-fit: cover;
-     display: block;
+     
      
  }
 
  .slide-container .slides img:not(.active){
      top: 0;
      left: -100%;
- } 
+     
+ }
   span.next, span.prev{
     position: absolute;
     top: 40%;
@@ -216,10 +217,7 @@ span.next:hover, span.prev:hover{
   height: auto;
     margin: 0;
 }
- .banner-main-content iframe{
-    min-width: 100%;
-    height: 100vh;
-}
+
 .banner-main-content{
     overflow: hidden;
     padding: 0 0.5rem;
@@ -293,10 +291,10 @@ span.next:hover, span.prev:hover{
 .current-news-head h3 a{
     cursor: pointer;
     position: relative;
-    color: #000;
+    color: white;
 }
 .current-news-head h3 a:hover{
-    color: #ffff;
+    color: white;
 }
 .current-news-head h3:hover:before{
    content: ">>";
@@ -597,15 +595,7 @@ article div{
     }
     .inputSearch{
         display: flex;
-    }
-    
-    
-
-
-    
-    
-    
-    
+    }    
 }
 
 
