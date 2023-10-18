@@ -125,18 +125,19 @@ nav ul li a::after{
 } 
 .slide-container{
     position: relative;
-     width: 440px;
+     width: 430px;
      height: 300px;
      border: 3px solid #ede6d6;
      box-shadow: 0 0 8px 2px rgba(0,0,0,0.2);
      
  }
  .slide-container .slides{
-     width: 100%;
+    width: 100%;
      height: calc(100% - 60px);
      position: relative;
      align-items: center;
      overflow: hidden;
+
  }
 .slide-container .slides img{
      width: 100%;
@@ -144,7 +145,6 @@ nav ul li a::after{
      position: absolute;
      object-fit: cover;
      display: block;
-
      
  }
 
@@ -267,11 +267,7 @@ span.next:hover, span.prev:hover{
      height: 150px;
      display: block;
      align-items: center;
-     margin-top: 0;
-    
-     
-     
-    
+     margin-top: 0;  
     
 }
 .banner-sub-content h3{
@@ -526,7 +522,35 @@ article div{
     .main-container-right p{
         margin-left: 1px;
     }
+    .slide-container{
+        width: 600px;
+    }
+
 }
+@media(max-width:1080px){
+
+    .container{
+        width: 100%;
+        height: auto;
+    }
+
+    .slide-container{
+        margin-left: 10%;
+    }
+    
+}
+    @media(max-width:780px){
+     .container{
+        min-width: 100%;
+     }
+    
+        .slide-container{
+            width: min(30rem, 100%);
+            margin-left: 0;
+        }
+        
+    }
+
 
 
     
@@ -550,6 +574,7 @@ article div{
         min-width: 100%;
 
     }
+    
 }
 @media(min-width:992px){
     main{
@@ -573,6 +598,7 @@ article div{
     .inputSearch{
         display: flex;
     }
+    
     
 
 
