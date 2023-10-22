@@ -21,6 +21,7 @@ menuBtn.addEventListener("click",()=>{
     mobileMenu.classList.toggle("hidden")
 })
 
+
 let slideImages =  document.querySelectorAll('img');//access the images
 let next = document.querySelector('.next');
 let prev = document.querySelector('.prev');

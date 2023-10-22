@@ -108,6 +108,9 @@ nav ul li a::after{
     color: black;
 }
 /*banner*/
+h4{
+    text-align: center;
+}
 .banner{
     position: relative;
     overflow: hidden;
@@ -138,6 +141,8 @@ nav ul li a::after{
      position: relative;
      align-items: center;
      overflow: hidden;
+     background-color: gainsboro;
+     
 
  }
 .slide-container .slides img {
@@ -146,9 +151,13 @@ nav ul li a::after{
      position: absolute;
      object-fit: cover;
      align-items: center;
+     object-position: center;
+     
+     
      
      
  }
+ 
 
  .slide-container .slides img:not(.active){
      top: 0;
@@ -176,9 +185,34 @@ span.prev{
     left: 20px;
 }
 span.next:hover, span.prev:hover{
-    background-color: #ede6d6;
+    background-color: #000000a8;
     opacity: 0.8;
 }
+.slide-container .captionHolder{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 1;
+    color: #000;
+    font-family: sans-serif;
+    font-size: 16px;
+    text-align: center;
+    background: #00000047;
+    height: 50px;
+    line-height: 50px;
+    overflow: hidden;
+    
+}
+.captionText{
+    display: none;
+}
+.captionHolder .captionText{
+    margin: 0;
+
+
+    
+}
+
  @keyframes next1{
     from{
         left: 0%;
