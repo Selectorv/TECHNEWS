@@ -485,6 +485,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
     const container = document.querySelector('.slide-container');
     container.addEventListener('mouseover', function(){
         clearInterval(deletInterval);
+        loop:true;
     });
 
     //Resume sliding when mouse is out
