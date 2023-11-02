@@ -111,6 +111,8 @@ nav ul li a::after{
 /*banner*/
 h4{
     text-align: center;
+    font-weight: 200;
+    color: #878787;
 }
 .banner{
     overflow: hidden;
