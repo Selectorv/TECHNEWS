@@ -95,11 +95,6 @@ nav ul li a::after{
     display: table;
     border: 1px green;
 }
-
-
-
-
-
 .ham-btn{
     margin-right: 0;
     width: 20px;
@@ -287,6 +282,7 @@ span.next:hover, span.prev:hover{
     padding-top: 10px;
     color: red;
     padding: 10px;
+
 }
 
 .current-news-head{
