@@ -176,8 +176,8 @@ span.prev{
     left: 1px;
 }
 span.next:hover, span.prev:hover{
-    background-color: #000000a8;
-    opacity: 0.8;
+    background-color: #a8a8a8;
+    opacity: 0.4;
 }
 
 
@@ -517,6 +517,22 @@ article div{
      width: 100%;
     
      
+}
+.Leisure{
+    width: 90%;
+    height: 60px;
+    background-color: blue;
+    font-size: 18px;
+    text-decoration: none;
+    margin-left: 10px;
+    text-align: center;
+
+    
+}
+.Leisure a {
+    text-decoration: none;
+    color: white;
+    
 }
 
 @media(max-width:1080px){
