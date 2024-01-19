@@ -145,12 +145,8 @@ h4{
      position: absolute;
      object-fit: cover;
      align-items: center;
-     overflow: hidden;
-     
-        
+     overflow: hidden;       
  }
- 
-
  .slide-container .slides img:not(.active){
      top: 0;
      left: -100%;
@@ -160,12 +156,12 @@ h4{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    padding: 10px;
+    padding: 15px;
     color: #878787;
     font-size: 20px;
     font-weight: bold;
     transition: 0.5s;
-    border-radius: 3px;
+    border-radius: 5px;
     user-select: none;
     cursor: pointer;
     z-index: 1;
@@ -461,7 +457,7 @@ article{
 article{
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    padding: 15px ;
+    grid-gap: 8px;
     border-bottom: 1px solid #7ac64a;
 }
 .main-container-right
@@ -605,7 +601,7 @@ article div{
     
     .container-bottom-left{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1f);
         min-width: 100%;
     }
     .container-bottom-left img{
