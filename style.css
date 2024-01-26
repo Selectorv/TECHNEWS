@@ -96,12 +96,12 @@ nav ul li a::after{
     display: table;
     border: 1px green;
 }
-.ham-btn{
+.menuBtn{
     margin-right: 0;
-    width: 20px;
+    width: 25px;
     height: 15px;
     font-size: 20px;
-    color: black;
+    color: rgb(26, 131, 167);
     cursor: pointer;
 }
 /*banner*/
@@ -118,11 +118,17 @@ h4{
     align-items: center;
     margin-top: 0;
 }
-
-.slide-container{
+iframe{
+    border: none;
+    width: min(25rem, 100%);
+    
+    scrollbar-width: none;
+    
+}
+ .slide-container{
     position: relative;
     display: flex;
-     width: 450px;
+     width: 500px;
      height: 300px;
      border: 1px solid #ede6d6;
      margin-top: 10px;
@@ -131,7 +137,8 @@ h4{
  }
  
  .slide-container .slides{
-    width: 100%;
+    width: min(25rem, 100%);
+
      height: calc(100% - 30px);
      position: relative;
      align-items: center;
@@ -140,7 +147,7 @@ h4{
 
  }
 .slide-container .slides img {
-     width: 100%;
+     width: min(25rem, 100%);
      height: 100%;
      position: absolute;
      object-fit: cover;
@@ -284,13 +291,13 @@ span.next:hover, span.prev:hover{
 
 .current-news-head{
     height: auto;
-    background: rgb(220, 1, 1);
+    background: black;
     padding: 10px;
     font-size: 12px;
     margin: 5px 0;    
 }
 .current-news-head:hover{
-    background-color: #000;
+    background-color: red;
 }
 .current-news-head h2{
     color: orange;
@@ -356,7 +363,7 @@ span.next:hover, span.prev:hover{
 .hot-topic-content a{
     display: block;
     background: #f3f3f3;
-    color: green;
+    color: red;
     border: none;
     width: 95px;
     border-radius: 2px;
@@ -375,6 +382,11 @@ span.next:hover, span.prev:hover{
 .hot-topic:hover{
     background-color: #e5e4e4;
 }
+.hot-topic hr{
+    background-color: red;
+}
+
+
 /*main*/
 main a{
     padding: 15px 0;

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slide</title>
+</head>
+<style>
+
+    .slide-container{
+       position: relative;
+       width: 440px;
+       height: 300px;
+       margin-top: 0;
+       padding-top: 0;
+       width: min(30rem, 100%);
+   
+   }
+   
+   
+   .slide-container .slides{
+        width: 100%;
+        height: calc(100% - 40px);
+        position: relative;
+        overflow: hidden;
+        background-color: gainsboro;   
+   
+    }
+   .slide-container .slides img {
+        width: 100% ;
+        height: 100%;
+        position: absolute;
+        object-fit: cover;
+        align-items: center;
+        overflow: hidden;       
+    }
+     .slide-container .slides img:not(.active){
+        top: 0;
+        left: -100%;
+        
+    }
+    span.next, span.prev{
+       position: absolute;
+       top: 50%;
+       transform: translateY(-50%);
+       padding: 15px;
+       color: #878787;
+       font-size: 20px;
+       font-weight: bold;
+    }span.next{
+       right: 8px;
+   }
+   span.prev{
+       left: 1px;
+   }
+   span.next:hover, span.prev:hover{
+       background-color: #a8a8a8;
+       opacity: 0.4;
+   }
+   
+   
+     span.next, span.prev{
+       position: absolute;
+       top: 50%;
+       transform: translateY(-50%);
+      padding: 15px;
+       color: #878787;
+       font-size: 20px;
+       font-weight: bold;
+       transition: 0.5s;
+       border-radius: 5px;
+       user-select: none;
+       cursor: pointer;
+       z-index: 1;
+   }
+   span.next{
+       right: 8px;
+   }
+   span.prev{
+       left: 1px;
+   }
+   
+   
+   span.next:hover, 
+   span.prev:hover{
+       background-color: #a8a8a8;
+       opacity: 0.4;
+   }
+    
+       @keyframes next1{
+           from{
+               left: 0%;
+           }
+           to{
+               left: -100%;
+           }
+       }
+        @keyframes next2{
+           from{
+               left: 100%;
+           }
+           to{
+               left: 0%;
+           }
+       }
+        @keyframes prev1{
+           from{
+               left: 0%;
+           }
+           to{
+               left: 100%;
+           }
+       }
+        @keyframes prev2{
+           from{
+               left: -100%;
+           }
+             to{
+               left: 0%;
+           }
+       }
+   
+   
+   
+   
+   
+   </style>
+   <body>
+       <div class="slide-container">
+       <div class="slides">
+               <img src="image/11802edb09fad9914a5e63c95955ab54.jpg" alt=""  class="active">
+               <img src="image/1267cf1e0792c8948c311eb5280e793b.jpg" alt="" >
+               <img src="image/16983874298467413781375672193386.jpg" alt="" >
+               <img src="image/1c7828d6148f9abfd2c153a262a48e12.jpg" alt="" >
+   </div>
+   
+   
+   <div class="buttons">
+       <span class="next">&#10095;</span>
+       <span class="prev">&#10094;</span>
+   </div>
+   
+           
+   </div>
+   
+   
+       
+   </body> 
+    <script type="text/javascript">
+   
+       let slideImages =  document.querySelectorAll('img');
+       let next = document.querySelector('.next');
+       let prev = document.querySelector('.prev');
+   
+   
+       var counter = 0;
+   
+   
+      
+       //code for next button
+       next.addEventListener('click', slideNext);
+       function slideNext(){
+        slideImages[counter].style.animation = 'next1 0.5s ease-in forwards';
+        if(counter >= slideImages.length-1){
+           counter = 0;
+        }
+        else{
+           counter++;
+        }
+        slideImages[counter].style.animation = 'next2 0.5s ease-in forwards';
+        
+       }
+    //code for prev button prev.addEventListener('click', slidePrev);
+       function slidePrev(){
+        slideImages[counter].style.animation = 'prev1 0.5s ease-in forwards';
+        if(counter == 0){
+           counter = slideImages.length-1;
+        }
+        else{
+           counter--;
+        }
+        slideImages[counter].style.animation = 'prev2 0.5s ease-in forwards';
+        
+       }
+       //Auto sliding
+       function autoSliding(){
+           deletInterval = setInterval(timer, 3000);
+           function timer(){
+               slideNext();
+           
+           
+           }
+       }
+       autoSliding();
+       
+       //stop auto sliding when mouse is over
+       const container = document.querySelector('.slide-container');
+       container.addEventListener('mouseover', function(){
+           clearInterval(deletInterval);
+   
+       });
+   
+       //Resume sliding when mouse is out
+   
+   
+   
+    container.addEventListener('mouseout', autoSliding);
+   
+       
+   </script>
+   
+   
+   
+   
+   
+   </html>
+
+
+
