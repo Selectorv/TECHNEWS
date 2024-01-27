@@ -290,18 +290,17 @@ span.next:hover, span.prev:hover{
 }
 
 .current-news-head{
-    height: auto;
     background: black;
-    padding: 10px;
-    font-size: 12px;
+    padding: 8px;
+    font-size: 10px;
     margin: 5px 0;    
 }
 .current-news-head:hover{
     background-color: red;
 }
 .current-news-head h2{
-    color: orange;
-    font-size:14px;
+    color: rgb(252, 218, 29);
+    font-size:12px;
     padding: 0;
 
 }
@@ -309,6 +308,7 @@ span.next:hover, span.prev:hover{
     cursor: pointer;
     position: relative;
     color: white;
+
 }
 .current-news-head h3 a:hover{
     color: white;
@@ -746,39 +746,30 @@ footer p a:hover{
 .footer_content .info{
     margin-left: 3rem;
 }
-/*newsletter*/
-.footer_content .newsletter form{
-    border: none;
-    padding: 1px;
-    border-radius: 50px;
-    display: flex;
+/*newslette*/
+.footer_content .newsletter input{
+    border: 1px solid #000;
+    padding: 8px 15px;
+    display: block;
     width: 100%;
-    max-width: 500px;
     font-size: 14px;
+    box-sizing: border-box;
 }
 
-.footer_content .newsletter input{
-    flex: 1 1;
+
+
+.footer_content .newsletter input[type=text],select{
     background-color: white;
-    outline: none;
-    border: none;
-    padding: 0 10px;
+    border: 1px #000;
+    padding: 2 8px;
     color: inherit;
-    min-height: 50px;
+    min-height: 40px;
 }
-.footer_content .newsletter button{
-    
-    width: 80%;
-    padding: 0 18px;
-    min-height: 46px;
-    font-weight: bold;
-    transition: 0.2s ease;
-    background: rgb(26, 131, 167);
-    color: #f1f1f1f1;
-}
-.footer_content .newsletter button:hover{
-    cursor: pointer;
-    background-color: red;
+.footer_content .newsletter input[type=submit] {
+    background-color: rgb(26, 131, 167);
+    width: 100%;
+    padding: 0 15px;
+    min-height: 35px;
     color:  black;
 }
 /*footer copyright*/
