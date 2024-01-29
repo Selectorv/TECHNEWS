@@ -9,7 +9,7 @@ body{
     min-height: 100vh;
     font-family: Georgia, 'Times New Roman', Times, serif ;
     margin: 0;
-    background: #f5f6f9;
+    background: #fff;
     display: flex;
     flex-direction: column;
     
@@ -290,13 +290,13 @@ span.next:hover, span.prev:hover{
 }
 
 .current-news-head{
-    background: black;
+    background-color: #ce0000;
     padding: 8px;
     font-size: 10px;
     margin: 5px 0;    
 }
 .current-news-head:hover{
-    background-color: red;
+    background-color: black;
 }
 .current-news-head h2{
     color: rgb(252, 218, 29);
@@ -435,9 +435,7 @@ article{
     text-decoration: none;
     color: darkblue;
 }
-.container-bottom-left{
-    background: #f3f3f3;
-    
+.container-bottom-left{ 
     max-width: 100%;
 }
 
@@ -457,7 +455,7 @@ article{
 /*main container right*/
 .main-container-right{
     padding: 10px 5px;
-    background-color: rgb(250, 248, 242);
+
     
     
 }
@@ -528,13 +526,14 @@ article div{
      
 }
 .Leisure{
-    width: 90%;
+    width: 100%;
     height: 80px;
-    background-color: blue;
+    background-color: rgb(26, 131, 167);
     font-size: 18px;
     text-decoration: none;
     /*margin:  20px 10px 20px 10px;*/
     text-align: center;
+    margin-bottom: 20px;
     
 
     
@@ -596,11 +595,6 @@ article div{
         }
         
     }
-
-
-
-    
-
 
 @media(min-width:768px){
     
@@ -670,9 +664,9 @@ article div{
     --primary-color: #baaB9B;
 }
 footer{
-    background: linear-gradient(white,black);
+    background: rgb(0, 8, 11);
     overflow: hidden;
-    color: black;
+    color: #fff;
     display: flex;
     flex-direction: column;
     
@@ -680,13 +674,13 @@ footer{
 /*footer default style*/
 footer a{
     text-decoration: none;
-    color: black;
+    color: white;
     
 }
 
 footer h2{
     
-   color: black;
+   color: white;
     margin-bottom: 2rem;
     cursor: pointer;    
 }
@@ -694,12 +688,9 @@ footer p{
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
-    color: black;
-}
-footer p a:hover{
     color: white;
-
 }
+
 /*footer content*/
 .footer_content{
     padding: 2rem;
@@ -768,7 +759,7 @@ footer p a:hover{
 .footer_content .newsletter input[type=submit] {
     background-color: rgb(26, 131, 167);
     width: 100%;
-    padding: 0 15px;
+    padding: 0 8px;
     min-height: 35px;
     color:  black;
 }
@@ -777,7 +768,6 @@ footer p a:hover{
     width: auto;
     margin-top: 2rem;
     padding: 1rem;
-    background-color: var(--primary-color);
     display: flex;
     justify-content: center;
     align-items: center;
