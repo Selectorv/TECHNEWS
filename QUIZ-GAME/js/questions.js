@@ -26,11 +26,11 @@ let questions = [
     },
     {
         numb: 3,
-        question:"Who was the African leader who was involved in aperthaid",
+        question:"Name the African leader who was involved in aperthaid",
         answer:"Nelson Mandela",
         options:[
             "Nelson Mandela",
-            "Muamar Gaddafi",
+            "Muamar Gadaffi",
             "Jomo Kenyatta",
             "Olesegun Obasanjo"
 
@@ -38,13 +38,13 @@ let questions = [
     },
     {
         numb: 4,
-        question:"Amazon forest is found in which country?",
-        answer:"Russia",
+        question:"England is ruled by ?",
+        answer:"Monarch",
         options:[
-            "Australia",
-            "Botswana",
-            "China",
-            "Russia"
+            "President",
+            "Monarch",
+            "Prime Minister",
+            "Chief Minister"
         ]
     },
     {
