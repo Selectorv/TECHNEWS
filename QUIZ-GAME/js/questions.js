@@ -38,7 +38,7 @@ let questions = [
     },
     {
         numb: 4,
-        question:"England is ruled by ?",
+        question:"England is ruled by?",
         answer:"Monarch",
         options:[
             "President",
