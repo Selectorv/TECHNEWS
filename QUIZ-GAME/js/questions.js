@@ -49,13 +49,13 @@ let questions = [
     },
     {
         numb: 5,
-        question:"Which type of food is both fruit and Vegetable?",
-        answer:"Banana",
+        question:"Which is the odd one out?",
+        answer:"Yam",
         options:[
-            "Arrow root",
-            "Banana",
-            "Tomato",
-            "Spinach"
+            "Yam",
+            "Mango",
+            "Orange",
+            "Water Mellon"
         ]
     },
 

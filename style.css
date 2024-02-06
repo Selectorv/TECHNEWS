@@ -42,7 +42,7 @@ header{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-nav ul {
+.navbar ul {
     display: flex;
     list-style-type: none;
     gap: 15px;
@@ -52,15 +52,15 @@ nav ul {
 
     cursor: pointer;
 }
-nav ul li a{
+.navbar ul li a{
     text-decoration: none;
     color: #000;
 }
-nav ul li a:hover{
+.navbar ul li a:hover{
     color: rgb(26, 131, 167);
 
 }
-nav ul li a::after{
+.navbar ul li a::after{
     color: #000;
 }
 
@@ -96,7 +96,7 @@ nav ul li a::after{
     display: table;
     border: 1px green;
 }
-.menuBtn{
+.toggle_btn{
     margin-right: 0;
     width: 25px;
     height: 15px;
@@ -104,6 +104,75 @@ nav ul li a::after{
     color: rgb(26, 131, 167);
     cursor: pointer;
 }
+
+/*mobile menu*/
+.dropdown_menu{
+    display: hidden;
+    position: absolute;
+    top: 65px;
+    width: 100%;
+    max-width: 450px;
+    background-color: lightblue;
+    height: calc(80% - 200px);
+
+}
+.dropdown_menu .open{
+    height: 240px;
+    
+}
+
+
+.dropdown_menu nav ul{
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    color: rgb(5, 5, 5);
+    font-weight: 700;
+    left: 4rem;
+    overflow: hidden;
+    align-items: left;
+    padding: 2rem; 
+    line-height: 2rem;
+    border: 1px transparent;
+    box-shadow: 0px 4px 8px 0 #8888 ;
+}
+.dropdown_menu  ul li a{
+    color: #000;
+    
+}
+.dropdown_menu nav ul li {
+    width: 100%;
+    
+
+}
+
+ .dropdown_menu ul li a:hover{
+    width: 100%;
+    background: blue;
+    color: white;
+    text-align: left;
+    
+}
+
+.mobile .inputSearch{
+    height: 35px;
+    width: 300px;
+}
+ .hidden{
+    display: none;
+}
+
+
+/*dropdown menu*/
+.toggle_btn{
+    display: none;
+    color: rgb(26, 131, 167);
+    font-size: 1.5rem;
+    margin-right: 20px;
+}
+
+
+
 /*banner*/
 h4{
     text-align: center;
@@ -534,6 +603,7 @@ article div{
     /*margin:  20px 10px 20px 10px;*/
     text-align: center;
     margin-bottom: 20px;
+    line-height: 0.6;
     
 
     
@@ -633,7 +703,7 @@ article div{
         height: 100vh;
     }
     
-    .menuBtn{
+   .toggle_btn{
         display: none;
     }
     .inputSearch{
@@ -745,6 +815,7 @@ footer p{
     width: 100%;
     font-size: 14px;
     box-sizing: border-box;
+    color: #807f7f;
 }
 
 
@@ -753,7 +824,7 @@ footer p{
     background-color: white;
     border: 1px #000;
     padding: 2 8px;
-    color: inherit;
+    color: black;
     min-height: 40px;
 }
 .footer_content .newsletter input[type=submit] {
@@ -787,7 +858,7 @@ footer p{
         justify-content: center;
         align-items: center;
     }
-    .menuBtn{
+    .toggle_btn{
         display: none;
     }
     .inputSearch{
@@ -797,20 +868,20 @@ footer p{
 
 }
 @media(max-width:800px){
-    .desktop{
+    .navbar{
         display: none;
     }
-    .menuBtn{
+    .dropdown_menu{
         display: block;
         margin-right: 5px;
     }
-    
-   .mobile-hidden{
+    .dropdown_menu nav {
         display: block;
     }
-    
-    
-    
+    .toggle_btn{
+        display: block;
+    }
+        
 }
 
 
@@ -859,66 +930,9 @@ footer p{
     .logo h1{
         font-size: 35px;
     }
-    .menuBtn{
+    .toggle_btn{
         padding-right: 2px;
     }
     
-}
-/*mobile menu*/
-.mobile{
-    
-    position: absolute;
-    top: 6.4rem;
-    width: 100%;
-    max-width: 450px;
-    background-color: lightblue;
-    height: calc(80% - 200px);
-
-}
-
-.mobile nav ul{
-    flex-direction: column;
-    background-color: #fff;
-    color: rgb(5, 5, 5);
-    font-weight: 700;
-    left: 4rem;
-    overflow: hidden;
-    align-items: left;
-    padding: 2rem;
-    
-    line-height: 2rem;
-    border: 1px transparent;
-    box-shadow: 0px 4px 8px 0 #8888 ;
-}
-.mobile .hidden .open{
-    height: 300px;
-}
-.mobile .hidden ul li a{
-    color: #000;
     
 }
-.mobile nav ul li {
-    width: 100%;
-    
-
-}
-
- .mobile ul li a:hover{
-    width: 100%;
-    background: blue;
-    color: white;
-    text-align: left;
-    
-}
-
-.mobile .inputSearch{
-    height: 35px;
-    width: 300px;
-}
-.hidden{
-    display: none;
-}
-
-
-
-

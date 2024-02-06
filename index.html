@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="news,documentary,video,games">
+    <meta name="keywords" content="news, documentary, video, games, blog">
+    <meta name="description" content="news app">
     <link rel="icon" href="favicon_io (2)/favicon-32x32.png">
-    <title>The Region </title>
+    <title>The Region News</title>
   
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,22 +42,20 @@ integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFk
            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
         </div>
-        <nav class="desktop">
-            <ul>
+        <div class="navbar">
+            <ul class="links">
                 <li><a href="index.html">General</a></li>
                 <li><a href="https://www.reuterspolitics.com">Politics</a></li>
                 <li><a href="https://www.medicalnewstoday.com">Health </a></li>
                 <li><a href="https://www.businessdailyafrica.com">Business</a></li>
                 <li><a href="https://www.skysports.com">sports</a></li>
             </ul>
-        </nav>
-        <div class="menuBtn">
-            <span>
-                <i class="fa-solid fa-bars"></i>
-                     </span>
+        </div>
+        <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>      
             </div>
      
-            <div class="mobile hidden">
+            <div class="dropdown_menu open">
                 <nav>
                     <ul>
                         <h3>Menu</h3>
@@ -315,8 +314,8 @@ integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFk
     
        <div class="Leisure">
         <a href="QUIZ-GAME/quiz.html">
-            <p>Answer 5 simple questions and</p>
-            <p><span>Win Free Data!</span></p>  
+            <p>Answer 5 simple questions </p><br>and
+            <p><span>Win Lots of prices!</span></p>  
             
             
         </a>
@@ -407,6 +406,27 @@ integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFk
    
 
    </footer>
+   
+   <script>
+  const toggleBtn = document.querySelector('.toggle_btn')
+  const toggleBtnIcon = document.querySelector('.toggle_btn i')
+  const dropDownMenu = document.querySelector('.dropdown_menu')
+
+toggleBtn . onclick = function () {
+   dropDownMenu .classList.toggle('open')
+    const isOpen = dropDownMenu.classList.contains('open')
+    
+   toggleBtnIcon.classList = isOpen
+    ? "fa-solid fa-xmark"
+    : "fa-solid fa-bars"
+
+    
+}  
+
+
+
+
+   </script>
 
 
 <script type="text/javascript">
