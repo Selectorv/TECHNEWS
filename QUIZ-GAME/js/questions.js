@@ -55,7 +55,7 @@ let questions = [
             "Yam",
             "Mango",
             "Orange",
-            "Water Mellon"
+            "WaterMelon"
         ]
     },
 
