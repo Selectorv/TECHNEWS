@@ -112,7 +112,8 @@ header{
     height: 0;
     overflow: hidden;
     background-color: #fff;
-    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);   
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);  
+    
     
 }
 
@@ -125,11 +126,13 @@ header{
     text-decoration: none;
     margin-top: 20px;
     width: 100%;
+    
 
 }
 
 .dropdown_menu.open {
-    height: auto;
+    height: 100vh;
+
 }
 
 .dropdown_menu.open li a{
@@ -892,12 +895,14 @@ footer p{
     
     .toggle_btn{
     display: block;
+
    }
 
    .dropdown_menu{
     display: block;
     left: 2rem;
     width: unset;
+
    }
 }
 
