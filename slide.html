@@ -188,7 +188,8 @@
         slideImages[counter].style.animation = 'next2 0.5s ease-in forwards';
         
        }
-    //code for prev button prev.addEventListener('click', slidePrev);
+    //code for prev button
+     prev.addEventListener('click', slidePrev);
        function slidePrev(){
         slideImages[counter].style.animation = 'prev1 0.5s ease-in forwards';
         if(counter == 0){
@@ -202,7 +203,7 @@
        }
        //Auto sliding
        function autoSliding(){
-           deletInterval = setInterval(timer, 3000);
+           deletInterval = setInterval(timer, 6000);
            function timer(){
                slideNext();
            
