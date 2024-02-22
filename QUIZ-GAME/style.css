@@ -190,6 +190,7 @@ h1{
     left: 0px;
     height: 3px;
     background: green;
+    overflow: hidden;
 }
 .quiz_box section{
     padding: 25px 30px 25px 30px;
@@ -404,6 +405,7 @@ footer .next_btn:hover{
         width: 100%;
         
     }
+    
     
 
 }  @keyframes confetti-slow{

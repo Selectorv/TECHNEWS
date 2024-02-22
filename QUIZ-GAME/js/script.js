@@ -178,7 +178,7 @@ else{
 
 
 function startTimer(time){
-    counter = setInterval(timer, 2000);
+    counter = setInterval(timer, 1000);
     function timer(){
         timeCount.textContent = time;
         time--;
@@ -210,7 +210,7 @@ function startTimer(time){
 }
 
 function startTimerLine(time){
-    counterLine = setInterval(timer, 59);
+    counterLine = setInterval(timer, 29);
     function timer(){
          time += 1;
          timeLine.style.width = time + "px";

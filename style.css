@@ -113,7 +113,7 @@ header{
     overflow: hidden;
     background-color: #fff;
     transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);  
-    
+    z-index: 10;
     
 }
 
@@ -132,6 +132,7 @@ header{
 
 .dropdown_menu.open {
     height: 100vh;
+    
 
 }
 
@@ -591,9 +592,7 @@ article:last-child{
     font-weight: 300;
     font-size: 12px;
     align-self: center;
-    padding-right: 0;
-    margin-right: 0;
-    
+    margin-top: 50px;
 }
 .main-container-right article h2{
     font-size: 18PX;
