@@ -113,7 +113,7 @@ header{
     overflow: hidden;
     background-color: #fff;
     transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);  
-    z-index: 10;
+
     
 }
 
@@ -313,7 +313,7 @@ span.next:hover, span.prev:hover{
     position: relative;   
 }
 .banner-main-content h1{
-    
+    margin-top: 0;
     font-size: 20px;
     text-align: center;
     

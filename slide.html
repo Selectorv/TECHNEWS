@@ -120,7 +120,18 @@
                left: 0%;
            }
        }
-   
+  
+       .text{
+            background-color: #00000047;
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 60px;
+            text-align: center;
+        }
    
    
    
@@ -128,20 +139,29 @@
    </style>
    <body>
        <div class="slide-container">
-       <div class="slides">
+       <div class="slides ">
             <a href=" https://www.pinterest.com/search/pins/?q=the%20royal%20family%20british%20monarchy&rs=guide&source_module_id=OBthe_royal_family_british_monarchy4783bf38-6a3f-42f6-9b1f-56ceef843e30&journey_depth=1&add_refine=The%20royal%20family%7Cguide%7Cword%7C1  " target="_parent">
-               <img src="tinfied (1)/tinified (1)/PA-73062638.jpg"  alt=""  class="active" >  
+               <img src="tinfied (1)/tinified (1)/PA-73062638.jpg"  alt=""  class="active" > 
+               <div class="text">lorem</div>
+               
             </a>
+       
 
             <a href="https://www.who.int/news/item/22-09-2023-new-analysis-confirms-world-seeing-an-upsurge-of-cholera" target="_parent">
                <img src="tIMAGES/istockphoto-514363103-612x612.jpg" alt="" >
+               <div class="text">ipsum</div>
+               
             </a>
+    
                <a href="https://www.olympics.com/en/news/olympic-games-paris-2024-full-schedule-and-day-by-day-competitions" target="_parent">
                <img src="tIMAGES/pexels-photo-936075.jpeg" alt="" >
+               
             </a>
-            <a href="https://www.gurdian.com" target="_parent">
-                
-               <img src="tIMAGES/istockphoto-1322144460-612x612.jpg" alt="" ></a>
+        
+            <a href="https://www.gurdian.com" target="_parent">    
+               <img src="tIMAGES/istockphoto-1322144460-612x612.jpg" alt="" >
+                 
+            </a>
                <a href="https://www.cnn.com" target="_parent">
                <img src="tinfied (1)/tinified (1)/DoE-St-Helena-08-Parade-walkabout-2535.jpg" alt="" ></a>
                <a href=" https://www.pinterest.com/search/pins/?q=royal%20family%20england%20british%20monarchy&rs=guide&source_module_id=OBroyal_family_england_british_monarchye11e4dda-889c-4ded-a544-2494ee9d373f&journey_depth=1&add_refine=Royal%20family%20england%7Cguide%7Cword%7C4    " target="_parent">
@@ -158,6 +178,9 @@
    <div class="buttons">
        <span class="next">&#10095;</span>
        <span class="prev">&#10094;</span>
+   </div>
+   
+
    </div>
    
            
@@ -227,6 +250,10 @@
    
    
     container.addEventListener('mouseout', autoSliding);
+
+    //caption Text
+    text = document.querySelector(".text;")
+    captionText.innerText=slides[slideIndex].querySelector("captionText").innerText;
    
        
    </script>

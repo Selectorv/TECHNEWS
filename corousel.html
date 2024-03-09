@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: Verdana, sans-serif;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .mySlides{
+            display: none;
+        }
+         img{
+            vertical-align: middle;
+            width: 100%;
+           height: 100%;   
+        }
+         
+
+        .slideshow-container {
+            width: 440px; 
+            height: 300px;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            background-color: gainsboro;   
+            width: min(30rem, 100%);
+            margin-top: 10px;
+        }
+        .slideshow-container .mySlides{
+            width: 100%;
+            height: calc(100% - 1px);
+            position: relative;
+            overflow: hidden;
+            
+        }
+        
+        .slideshow-container  .mySlides img{
+           width: 100%;
+           height: 100%;
+           position: absolute;
+           overflow: hidden;
+           object-fit: cover;
+           top: 0;
+            
+        }
+        .text{
+            background-color: #00000047;
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 0;
+            height: 60px;
+            width: 100%;
+            text-align: left;
+            
+        }
+        .numbertext{
+            color: #f2f2f2;
+            font-size: 12px;
+            top: 40px;
+            
+        }
+      
+        .active{
+            background-color: #717171;
+        }
+        .fade{
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+        @keyframes fade{
+            from{ opacity: .5 }
+            to{ opacity: 1 }
+        }
+        @media only screen and(max-width:300px){
+            .text{
+                font-size: 11px}
+        }
+        @media screen and (min-width:800px){
+            .slideshow-container{
+                width: 600px;
+                height: 400px;
+            }
+        }
+    
+        
+    </style>
+</head>
+<body>
+    
+    <div class="slideshow-container">
+        
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 10</div>
+            <a href="https://www.theguardian.com/commentsfree/2023/sep/22/uk-relations-france-king-charles-gets-it">
+            <img src="tinfied (1)/tinified (1)/PA-73062638.jpg" alt=""  style="width: 100%;">
+            <div class="text">When it comes to Britain's relations with France,at least king Charles gets it 
+                      |theGurdian
+            </div>
+            </a>
+        </div>
+          
+
+          
+        <div class="mySlides fade">
+            
+            <div class="numbertext">2 / 10 </div>
+            <a href="https://wwww.pinterest.com/pin/449937819034637008">
+            <img src="tIMAGES/istockphoto-514363103-612x612.jpg" alt="" style="width: 100%;" >
+            <div class="text">10 Easy ways to stay healthy<br>
+                |pinterest
+            </div>
+            </a>     
+        </div>
+          
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 10</div>
+            <a href="https://www.olympics.com">
+            <img src="tIMAGES/pexels-photo-936075.jpeg" alt="" style="width: 100%; " >
+            <div class="text">Olympic games 2024 full schedule at the Paris<br>
+                |olympics
+            </div>
+            </a>
+        </div>
+        
+        
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 10</div>
+            <a href="https://www.forestry.com">
+            <img src="tIMAGES/istockphoto-1322144460-612x612.jpg" alt="" style="width: 100%;">
+            <div class="text">How to fertilize Banana stalk:
+                A step-by-step guide for lush growth
+                |forestry
+            </div>
+            </a>
+
+        </div>
+        
+        
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 10 </div>
+            <a href=" https://www.theguardian.com/Australia-news/2023/oct/05/new-king-charles-image-coins-royal-australian-mint ">
+            <img src="tinfied (1)/tinified (1)/DoE-St-Helena-08-Parade-walkabout-2535.jpg" alt="" style="width: 100%;">
+            <div class="text">King Charles coins unvailed at Royal Australian Mint in Canbrerra
+                <br>|theguardian
+            </div>
+            </a>
+        </div>
+
+        
+
+        <div class="mySlides fade">
+            <div class="numbertext">6 / 10</div>
+            <a href=" https://www.theguardian.com/Australia-news/2023/oct/05/new-king-charles-image-coins-royal-australian-mint">
+            <img src="tinfied (1)/tinified (1)/PA-67291308.jpg" alt=""  style="width: 100%;">
+            <div class="text">Has our 'green' king gone off the rails?
+                <br>|theguardian
+            </div>
+            </a>
+        </div>
+        
+        
+        <div class="mySlides fade">
+            <div class="numbertext">7 / 10</div>
+            <a href="https://www.analyticsinsight.net/best-short-term-courses-for-mechanical-engineers-to-get-a-job/">
+            <img src="tIMAGES/istockphoto-1368082700-612x612.jpg" alt="" width="100%">
+            <div class="text">Best short term courses for mechanical engineers to get a job
+                <br>|analyticsinsight
+            </div>
+            </a>
+        </div>
+    
+
+        
+         <div class="mySlides fade">
+            <div class="numbertext">8 / 10</div>
+            <a href="https://www.analyticsinsight.net/10-projects-to-enhance-cyber-security-portfolio-and-expertise/">
+            <img src="tIMAGES/istockphoto-1322205588-612x612.jpg" alt="" style="width: 100%;" >
+            <div class="text">10 Projects to enhance Cybersecurity portfolio and expertise<br>
+                 |analyticsinsight
+            </div>
+            </a>
+        </div>
+    
+        
+        <div class="mySlides fade">
+            <div class="numbertext">9 / 10</div>
+            <a href="https://www.agribusiness/wheat.com">
+            <img src="tIMAGES/istockphoto-1270570904-612x612.jpg" alt="" style="width: 100%;" >
+            <div class="text">Agri-business:Wheat<br>
+                |agribusiness.com
+                  
+            </div>
+            </a>
+        </div>
+        
+        
+    
+        <div class="mySlides fade">
+            <div class="numbertext">10 / 10 </div>
+            <a href="https://www.theguardian.com/news/datablog/202/apr/19/twitter-music-app-100-most-followed-musicians">
+            <img src="tinfied (1)/tinified (1)/images (5).jpeg" alt="" style="width: 100%;" >
+            <div class="text">Eight of the most followed Twitter accounts
+                are musicians Justin Bieber,Lady Gaga and Katy Perry...
+            </div>
+            </a>
+
+        </div>  
+      </div>
+    
+    
+
+    
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = 
+            document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByName("dot")
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length)
+            (slideIndex = 1)
+            for (i = 0; i < dots.length; i++){
+                dots[i].className.replace("active", "");
+            }
+
+                slides[slideIndex -1].style.display="block";
+            
+                setTimeout(showSlides, 6000);
+
+
+            }
+        
+    </script>
+    
+</body>
+</html>
