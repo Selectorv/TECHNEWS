@@ -15,22 +15,22 @@ let questions = [
     },
     {
         numb: 2,
-        question:"Who was the founder of microsoft company ?",
+        question:"Who was the founder of microsoft company?",
         answer:"Bill Gates",
         options:[
             "Elon Musk",
             " Steve Jobs",
-            "Mark Zukerburg",
+            "Mark Zuckerberg",
             "Bill Gates"
         ]
     },
     {
         numb: 3,
-        question:"Name the African leader who was involved in aperthaid",
+        question:"Name the African leader who was anti-apartheid activist?",
         answer:"Nelson Mandela",
         options:[
             "Nelson Mandela",
-            "Muamar Gadaffi",
+            "Muammar Gaddafi",
             "Jomo Kenyatta",
             "Olesegun Obasanjo"
 
