@@ -11,9 +11,7 @@ body{
     margin: 0;
     background: #fff;
     display: flex;
-    flex-direction: column;
-    
-    
+    flex-direction: column;   
 }
 
 header{
@@ -25,7 +23,7 @@ header{
     height: 100px;
     display: flex;
     align-items: center;
-   padding: 16px;
+    padding: 16px;
     margin-top: 0;
     justify-content: space-between;
     box-shadow: 0px 3px 10px 0 rgb(80,119,242,0.3);
@@ -49,7 +47,6 @@ header{
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 400;
-
     cursor: pointer;
 }
 .navbar ul li a{
@@ -60,21 +57,15 @@ header{
 }
 .navbar ul li a:hover{
     color: rgb(9, 87, 113);
-
 }
 .navbar ul li a:active{
     background-color: rgb(26, 131, 167);
     color: #fff;
 }
-
-
 .inputSearh{
    display: block;
    border: 1px solid red;
-
 }
-
-
 .inputSearch input[type=text]{
     padding: 10px;
     font-size: 17px;
@@ -82,7 +73,6 @@ header{
     width: 80%;
     border: none;
 }
-
 .inputSearch button {
     width: 20%;
     padding: 10px;
@@ -91,8 +81,7 @@ header{
     float: right;
     cursor: pointer;
     border: 1px #888;
-    border-left:none ;
-    
+    border-left:none ;  
 }
 .inputSearch .search-bar .input[type=text]::after{
     content: "";
@@ -100,7 +89,6 @@ header{
     display: table;
     border: 1px green;
 }
-
 
 /*mobile menu*/
 .dropdown_menu {
@@ -112,11 +100,8 @@ header{
     height: 0;
     overflow: hidden;
     background-color: #fff;
-    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);  
-
-    
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);     
 }
-
 .dropdown_menu li a{
     padding-top: 4rem;
     padding: 0.4rem;
@@ -126,45 +111,36 @@ header{
     text-decoration: none;
     margin-top: 20px;
     width: 100%;
-    
-
 }
-
 .dropdown_menu.open {
     height: 100vh;
-    
-
 }
-
 .dropdown_menu.open li a{
     font-weight: 400;
     color: #000;
     margin-top: 10px;
 }
-
 .dropdown_menu li{
     padding: 0.1rem;
     display: flex;
     align-items: left;
     justify-content:left ;
     text-decoration: none;
-    
-
 }
 .dropdown_menu li a:hover{
     background-color: rgb(26, 131, 167);
     color: #fff;
 }
-
-
 .mobile .inputSearch{
     height: 35px;
     width: 300px;
 }
- 
-
-
-/*dropdown menu*/
+.dropdown_menu h3{
+    text-align: center;
+    background-color: rgb(26, 131, 167);
+    color: #fff;
+    padding: 0.7rem;
+}
  .toggle_btn{
     display: none;
     color: #000;
@@ -172,17 +148,6 @@ header{
     margin-right: 20px;
     cursor: pointer;
 }
-
-.dropdown_menu h3{
-    text-align: center;
-    background-color: rgb(26, 131, 167);
-    color: #fff;
-    padding: 0.7rem;
-    
-
-}
-
-
 
 /*banner*/
 h4{
@@ -201,112 +166,12 @@ h4{
 iframe{
     border: none;
     width: min(25rem, 100%);
-    
-    scrollbar-width: none;
-    
+    scrollbar-width: none;  
 }
- .slide-container{
-    position: relative;
-    display: flex;
-     width: 500px;
-     height: 300px;
-     border: 1px solid #ede6d6;
-     margin-top: 10px;
-    /* box-shadow: 0 0 8px 2px rgba(0,0,0,0.2);*/
-     
- }
- 
- .slide-container .slides{
-    width: min(25rem, 100%);
-
-     height: calc(100% - 30px);
-     position: relative;
-     align-items: center;
-     overflow: hidden;
-     background-color: gainsboro;   
-
- }
-.slide-container .slides img {
-     width: min(25rem, 100%);
-     height: 100%;
-     position: absolute;
-     object-fit: cover;
-     align-items: center;
-     overflow: hidden;       
- }
- .slide-container .slides img:not(.active){
-     top: 0;
-     left: -100%;
-     
- }
-  span.next, span.prev{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 15px;
-    color: #878787;
-    font-size: 20px;
-    font-weight: bold;
-    transition: 0.5s;
-    border-radius: 5px;
-    user-select: none;
-    cursor: pointer;
-    z-index: 1;
-}
-span.next{
-    right: 8px;
-}
-span.prev{
-    left: 1px;
-}
-span.next:hover, span.prev:hover{
-    background-color: #a8a8a8;
-    opacity: 0.4;
-}
-
-
- @keyframes next1{
-    from{
-        left: 0%;
-    }
-    to{
-        left: -100%;
-    }
-}
- @keyframes next2{
-    from{
-        left:100%;
-    }
-    to{
-        left: 0%;
-    }
-}
- @keyframes prev1{
-    from{
-        left: 0%;
-    }
-    to{
-        left: 100%;
-    }
-}
- @keyframes prev2{
-    from{
-        left: -100%;
-    }
-    to{
-        left: 0%;
-    }
-}
-
-
-
 .banner-main-content{
   min-width: 100%;
   height: auto;
     margin: 0;
-}
-
-.banner-main-content{
     overflow: hidden;
     padding: 0 0.5rem;
     line-height: 1.7rem;
@@ -315,18 +180,13 @@ span.next:hover, span.prev:hover{
 .banner-main-content h1{
     margin-top: 0;
     font-size: 20px;
-    text-align: center;
-    
+    text-align: center;   
 }
 .banner-main-content h2{
     overflow: hidden;
     font-size: 2rem;
     font-family: var(--heading);
-
-}
-.banner-main-content h2{
     padding: 2rem 0;
-    
 }
 .banner-main-content p{
     color: green;
@@ -352,33 +212,27 @@ span.next:hover, span.prev:hover{
 }
 .banner-sub-content{
     min-width: 100%;
-     position: relative;
+    position: relative;
     height: auto;
-    
-
 }
 .banner-sub-content h3{
     display: none;
-}
- 
+} 
 .banner-sub-content img{
      width: 150px;
      height: 150px;
      display: block;
      align-items: center;
-     margin-top: 0;  
-    
+     margin-top: 0;   
 }
 .banner-sub-content h3{
     padding-top: 10px;
     color: red;
     padding: 10px;
-
 }
 .banner-sub-content hr{
     display: none;
 }
-
 .current-news-head{
     background-color: #ce0000;
     padding: 8px;
@@ -386,13 +240,10 @@ span.next:hover, span.prev:hover{
     margin: 4px 0; 
     line-height: 2;   
 }
-
-
 .current-news-head h2{
     color: goldenrod;
     font-size:12px;
     padding: 0;
-
 }
 .current-news-head h2:hover{
     color: goldenrod;
@@ -401,7 +252,6 @@ span.next:hover, span.prev:hover{
     cursor: pointer;
     position: relative;
     color: white;
-
 }
 .current-news-head h3 a:hover{
     color: white;
@@ -435,27 +285,18 @@ span.next:hover, span.prev:hover{
    padding: 10px;
     right: 20px;
     padding: 1px 2px;
-    line-height: 1;
-    
-    
-    
+    line-height: 1;   
 }
-
 .hot-topic h2{
     padding: 20px 0;
     font-size: 16px;
     color: #000;
     margin-top: 0;
-    line-height: 1;
-    
-    
+    line-height: 1;   
 }
-
-.hot-topic h3{
-    
+.hot-topic h3{ 
     padding: 1px 0;
-    font-size: 16px;
-    
+    font-size: 16px;    
 }
  h5{
     font-size: 12px;
@@ -466,10 +307,8 @@ span.next:hover, span.prev:hover{
 }
 .hot-topic p{
     padding-left: 5px;
-    font-size: 15px;
-    
+    font-size: 15px;  
 }
-
 .hot-topic:hover{
     background-color:rgb(246, 246, 246);
 }
@@ -537,20 +376,16 @@ article{
 }
 .container-bottom-left{ 
     max-width: 100%;
-    margin-bottom: 10px;
-    
+    margin-bottom: 10px;  
 }
-
 .container-bottom-left a{
     text-decoration: none;
     color: #50a11d;
-    padding: 10px;
-    
+    padding: 10px; 
 }
 .container-bottom-left article {
     min-width: 100%;
     padding: 0 ;
-
 }
 .container-bottom-left img{
     width: 100%;
@@ -561,12 +396,8 @@ article{
 
 /*main container right*/
 .main-container-right{
-    padding: 10px 5px;
-
-    
-    
+    padding: 10px 5px;    
 }
-
 .main-container-right > h2{
     padding: 15px 0 15px 10px;
 }
@@ -599,15 +430,13 @@ article:last-child{
     font-size: 18PX;
     padding: 5px 0;
     font-family: var(--heading);
-    color: #000;
-    
+    color: #000;   
 }
 .main-container-right
 article p{
     font-size: 15px;
     font-weight: 300;
-    color: #252525;
-    
+    color: #252525;   
 }
 .main-container-right
 article div{
@@ -617,22 +446,17 @@ article div{
     text-decoration: none;
     color: red;
 }
-
 .main-container-right h3{
     font-size: 18px;
     padding: 10px 0;
     margin-left: 40%;
     color: #000;
-
 }
 .main-container-right p{
     padding-top: 10px;
 }
-
 .main-container-right iframe{
-     width: 100%;
-    
-     
+     width: 100%;    
 }
 .Leisure{
     width: 100%;
@@ -640,18 +464,13 @@ article div{
     background-color: rgb(26, 131, 167);
     font-size: 18px;
     text-decoration: none;
-    /*margin:  20px 10px 20px 10px;*/
     text-align: center;
     margin: 20px 10px ;
-    line-height: 0.6;
-    
-
-    
+    line-height: 0.6;   
 }
 .Leisure a {
     text-decoration: none;
-    color: white;
-    
+    color: white;   
 }
 .Leisure p span{
     font-size: 30px;
@@ -666,7 +485,6 @@ article div{
         text-align: center;
         padding: 10px;
         text-decoration: underline;
-    
     }
     h2{
         color: #000;
@@ -681,21 +499,18 @@ article div{
     }
     hr{
         background-color: green;
-    }
-
-.bottom{
+    }   
+   .bottom{
     margin-left: 10px;
-}
+   }
 
 @media(max-width:1080px){
     .banner-sub-content{
        padding-top: 0;
         margin-top: 0;
     }
-    
     .container-bottom-left {
         min-width: 100%;
-    
     }
     .container-bottom-left img{
         width: 100%;
@@ -706,26 +521,13 @@ article div{
     .slide-container{
         width: 600px;
     }
-
 }
-@media(max-width:1080px){
 
-    .container{
-        width: 100%;
-        height: auto;
-    }
-
-    .slide-container{
-        margin-left: 10%;
-    }
-    
-}
     @media(max-width:780px){
      .container{
         min-width: 100%;
      }
-    
-        .slide-container{
+     .slide-container{
             width: min(30rem, 100%);
             margin-left: 0;
         }
@@ -733,19 +535,15 @@ article div{
             display: block;
             color: rgb(26, 131, 167);
              text-align: center;
-        }
-        
+        }  
     }
 
 @media(min-width:768px){
-    
     .banner-sub-content{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        text-align: center;   
-        
-    }
-    
+        text-align: center;      
+    } 
     .container-bottom-left{
         display: grid;
         grid-template-columns: repeat(2, 1f);
@@ -753,10 +551,7 @@ article div{
     }
     .container-bottom-left img{
         min-width: 100%;
-
-    }
-    
-    
+    }   
 }
 @media(min-width:992px){
     main{
@@ -766,9 +561,6 @@ article div{
     .dropdown_menu.open{
         display: none;
     }
-    
-    
-
 }
 @media(min-width:1080px){
     .banner{
@@ -787,23 +579,6 @@ article div{
 }
 
 
-.social-icons{
-    flex: 0 1 30%;
-    display: grid;
-    margin: 0 auto;
-}
-.social-icons .fab{
-    color: #fff;
-    color: 2rem;
-}
-.social-icons ul{
-    display: flex;
-    justify-content: space-between;
-    padding: 0 20px;
-}
-.social-icons ul li{
-    padding: 20px;
-}
 /****footer***/
 :root{
     --primary-color: #baaB9B;
@@ -874,9 +649,6 @@ footer p{
     background-color: #fff;
     margin-bottom: 2rem;
     justify-items: right;
-    
-    
-
 }
 /*info*/
 .footer_content .info{
@@ -892,9 +664,6 @@ footer p{
     box-sizing: border-box;
     color: #807f7f;
 }
-
-
-
 .footer_content .newsletter input[type=text],select{
     background-color: white;
     border: 1px #000;
@@ -963,8 +732,6 @@ footer p{
     grid-template-columns: repeat(1, 2fr);
    }
 
-   
-   
    .banner-sub-content .hot-topic h2{
     grid-row: 2fr;
     grid-column: 2fr ;
@@ -975,10 +742,7 @@ footer p{
     background-color: rgb(26, 131, 167);
    }
 }
-
-
 @media (max-width:767px){
-    
     .footer_content .container{
         grid-template-columns: 1fr;
     }
@@ -994,16 +758,8 @@ footer p{
         grid-column-end: 1;
         text-align: center;
     }
-
-
-
 }
-
-
-
 @media all and (max-width:700px){
-
-
     header{
         padding: 5px 30px;
     }
@@ -1016,15 +772,12 @@ footer p{
 }
 @media(max-width:460px){
     .container-bottom-left {
-        width: 100%;
-        
+        width: 100%;   
     }
     .logo h1{
         font-size: 35px;
     }
     .toggle_btn{
         padding-right: 2px;
-    }
-    
-    
+    }    
 }
