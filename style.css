@@ -163,6 +163,40 @@ h4{
     align-items: center;
     margin-top: 0;
 }
+.bg-image{
+    margin-top: 0; 
+    text-decoration: none;
+
+}
+.bg-image h2{
+    margin-top: 0;
+    font-size: 30px;
+    padding: 10px 15px;
+    text-align: center;
+    
+}
+.bg-image h3{
+    padding: 20px 10px;
+    text-align: left;
+    color:#878787;
+    font-size: 12px;
+    text-decoration: none;    
+}
+.bg-image img{
+    width: min(25rem, 100%);
+}
+.bg-image a{
+    text-decoration: none;
+}
+.bg-image p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: #282828;
+    margin-left: 10px;
+    
+}
+
+
 iframe{
     border: none;
     width: min(25rem, 100%);
@@ -252,14 +286,17 @@ iframe{
     cursor: pointer;
     position: relative;
     color: white;
+    text-decoration:none ;
 }
 .current-news-head h3 a:hover{
     color: white;
+    
 }
 .current-news-head h3:hover:before{
    content: ">>";
    position: absolute;
    left: -12px;
+   
 }
 .current-news-head span{
     display: block;
@@ -287,16 +324,18 @@ iframe{
     padding: 1px 2px;
     line-height: 1;   
 }
-.hot-topic h2{
-    padding: 20px 0;
+.banner-sub-content .hot-topic a h2{
+    padding: 10px 8px;
     font-size: 16px;
     color: #000;
-    margin-top: 0;
-    line-height: 1;   
+    margin-top: 5px 4px;
+    line-height: 1; 
+    
 }
-.hot-topic h3{ 
+.hot-topic a h3{ 
     padding: 1px 0;
-    font-size: 16px;    
+    font-size: 16px; 
+    color: green;  
 }
  h5{
     font-size: 12px;
@@ -314,6 +353,7 @@ iframe{
 }
 .hot-topic hr{
     background-color: red;
+    margin: 5px;
 }
 
 
@@ -460,24 +500,27 @@ article div{
 }
 .Leisure{
     width: 100%;
-    height: 80px;
+    height: 90px;
     background-color: rgb(26, 131, 167);
-    font-size: 18px;
+    padding: 5px ;
     text-decoration: none;
     text-align: center;
     margin: 20px 10px ;
-    line-height: 0.6;   
+    line-height: 0.4;   
 }
 .Leisure a {
     text-decoration: none;
-    color: white;   
+    color: white;  
+    padding-top: 0; 
 }
 .Leisure p span{
-    font-size: 30px;
+    font-size: 25px;
     color: rgb(109, 255, 47);
 }
 .Leisure p{
     color: #fff;
+    padding-top: 0;
+
 }
 .bottom h1{
         margin-top: 10px;
@@ -499,6 +542,7 @@ article div{
     }
     hr{
         background-color: green;
+        margin: 5px;
     }   
    .bottom{
     margin-left: 10px;
@@ -551,7 +595,9 @@ article div{
     }
     .container-bottom-left img{
         min-width: 100%;
-    }   
+    }  
+    
+    
 }
 @media(min-width:992px){
     main{
@@ -565,6 +611,9 @@ article div{
 @media(min-width:1080px){
     .banner{
         grid-template-columns: 1fr 2fr;
+        hr{
+            display: none;
+        }
     }
     .banner-main-content{
         height: 100vh;
@@ -615,7 +664,7 @@ footer p{
 .footer_content{
     padding: 2rem;
 }
-.footer_content .container{
+.footer_content .footer_container{
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
@@ -689,7 +738,7 @@ footer p{
 }
 
 @media(max-width:991px){
-   .footer_content .container{
+   .footer_content .footer_container{
         grid-template-columns: repeat(2, 1fr);
         
     }
@@ -712,6 +761,7 @@ footer p{
 
 }
 @media(max-width:800px){
+     
     .navbar{
         display: none;
     }
@@ -739,11 +789,11 @@ footer p{
    }
    .banner-sub-content hr{
     display: block;
-    background-color: rgb(26, 131, 167);
+    background-color: rgb(20, 20, 20);
    }
 }
 @media (max-width:767px){
-    .footer_content .container{
+    .footer_content .footer_container{
         grid-template-columns: 1fr;
     }
     .footer_content .col{
@@ -781,3 +831,55 @@ footer p{
         padding-right: 2px;
     }    
 }
+
+.container{
+    width: 100%;
+    position: relative;
+    background-color: whitesmoke;
+    margin: 0 auto;
+
+    
+}
+.about a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px ;
+    text-decoration: none ;
+}
+.about-image{
+    width: 200px;
+    flex: 1;
+    margin-right: 10px;
+    overflow: hidden;
+   
+} 
+.about-image img{
+    width: min(25rem,100%);
+    height: 150px;
+    display: block;
+    transition: 0.5s ease;
+    
+}
+
+.about-content{
+    flex: 1;
+    margin: 20px;
+}
+.about-content h2{
+    font-size: 23px;
+    margin-bottom: 15px;
+    color: #282828;
+}
+P{
+font-size: 18px;
+line-height: 1.5;
+color: rgb(53, 52, 52);
+}
+.item{
+    font-size: 14px;
+    color: green;
+}
+
+

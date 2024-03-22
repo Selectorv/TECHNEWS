@@ -4,9 +4,379 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Business</title>
-</head>
-<body>
+    <link rel="stylesheet" href="../style.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2143382342376111"
+    crossorigin="anonymous"></script>
+
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: beige;
+        }
+        header{
+            width: 100%;
+            position: relative;
+            padding: 0.2rem;
+            
+        }
+       .navbar{
+         width: 100%;
+         height: 60px;
+         margin-right: 30px;
+         display: flex;
+         align-items: center;
+         justify-content: space-between;   
+        }
+       .navbar h2{
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: rgb(21,131,167);   
+        text-decoration: none;
+        margin-left: 20px;
+       }
+       .navbar .links{
+       display: flex;
+       gap: 1rem;
+        text-decoration: none;
+        list-style: none;
+         }
+         .navbar .links li a{
+            color: #000;
+            text-decoration: none;
+            font-size: 14px;
+         }
+         h4{
+            text-align: center;
+         }
+       
+
+        h1{
+            font-size: 22px;
+            text-align: center;
+            padding:10px 5px ;
+        }
+        .banner-top{
+            overflow: hidden;
+            min-height: auto;
+             display: grid;
+            grid-template-columns: 1fr;
+            align-items: center;
+            padding: 10px 0;
+            margin: 8px;   
+        }
+        .banner-main-content{
+            padding: 0.2rem;
+            line-height: 1.7;
+        }
+        .current-news-head{
+            background-color: #fff;
+            padding: 20px;
+            font-size: 12px;
+            margin: 10px;
+            text-decoration: none;
+        }
+        .current-news-head a{
+            text-decoration: none;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: #000;
+        }
+        .current-news-head a h3:visited{
+            color: aqua;
+        }
     
+        .current-news-head a h3{
+            padding: 6px;
+            cursor: pointer;
+            position: relative;
+            color: #000;
+            text-decoration: none;
+        }
+        .current-news-head h3:hover:before{
+            content: ">>";
+            position: absolute;
+            left: -12px;
+            text-decoration: none;
+        }
+        .current-news-head a h3:hover:after{
+            color: green;
+        }
+      
+        .current-news-head span{
+            display: block;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 300;
+            text-transform: uppercase;
+        }
+        .hot-topic img{
+            display: block;
+            width: min(25rem, 100%);
+        }
+        .hot-topic-content{
+            position: absolute;
+            bottom: 0;
+            left: 20px;
+            padding: 10px 20px;
+            line-height: 1;
+            color: #f3f3f3;
+        }
+        .hot-topic h2{
+            padding: 10px 0;
+            font-size: 13px;
+        }
+        .hot-topic h3{
+            padding: 10px 0;
+            font-size: 18px;
+        }
+        .hot-topic p{
+            padding: 10px 0;
+            font-size: 15px;
+        }
+        .hot-topic-content a{
+            display: block;
+            background: #f3f3f3;
+            border: none;
+            width: 95px;
+            border-radius: 2px;
+            text-align: center;
+            padding: 7px 10px;
+            font-size: 14px;
+            margin: 10px 0 10px 10px;
+        }
+
+       .banner-top {
+            width:100% ;
+            align-items: center;
+            justify-content: center;
+            display: grid;
+            grid-template-columns: 1 1fr  ;
+            align-items: center;
+            padding: 10px 0;
+            margin: 8px;
+            
+        }
+       .banner img{
+            max-width: 100%;
+            width: min(25rem, 100%);
+            align-items: center;
+            justify-content: center;
+        }
+        .banner a h2 {
+            text-align: center;
+            text-decoration: none;
+            color: #000;
+        }
+        .container{
+            width: 100%;
+            position: relative;
+            background-color: #fff;
+            margin: 0 auto;   
+        }
+        .banner-article{
+            text-decoration: none;
+            text-align: center;
+        }
+        .banner a{
+            text-decoration: none;
+        }
+        .about a{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 10px ;
+            text-decoration: none ;
+        }
+        .about-image{
+            width: 200px;
+            flex: 1;
+            margin-right: 10px;
+            overflow: hidden;
+           
+        }
+        .about-image img{
+            width: min(25rem, 100%);
+            height: 150px;
+            display: block;
+            transition: 0.5s ease;
+            
+        }
+        
+        .about-content{
+            flex: 1;
+            margin: 20px;
+        }
+        .about-content h2{
+            font-size: 23px;
+            margin-bottom: 15px;
+            color: #282828;
+        }
+        P{
+        font-size: 18px;
+        line-height: 1.5;
+        color: rgb(53, 52, 52);
+        }
+
+        p span{
+            color: gray;
+            padding: 10px 5px;
+            font-size: 12px;
+        }
+        .item{
+            font-size: 14px;
+            color: green;
+        }
+        hr{
+            background-color: gray;
+        }
+
+        @media(max-width:760px){
+            .navbar h2 {
+                font-size: 1.5rem  ;
+                padding: 2px;
+            
+
+        }
+        .navbar .links{
+            gap: 0.2rem;
+            margin: 2px 2px;
+            font-size: 12px;
+        }
+        @media(min-width: 1080px){
+            .banner-top{
+                grid-template-columns: repeat(1fr, 2fr);
+            }
+        }
+        @media(min-width:768px){
+                 .banner-sub-content img{
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                 }  
+        
+
+        }
+    }
+    </style>
+  </head>
+  <body>
+        <div class="navbar">
+                    <h2>The Region</h2>
+                <ul class="links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../Documents/life.html">Life</a></li>
+                    <li><a href="../Documents/business.html">Business</a></li>
+                    <li><a href="../Documents/sports.html">Sports</a></li>
+                    <li><a href="../Documents/technology.html">Technology</a></li>
+                </ul>   
+        </div>
+    </div>
+  </header>
+  <hr>
+  <h4>Advertisement</h4>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2143382342376111"
+  crossorigin="anonymous"></script>
+<!-- Musco News -->
+<ins class="adsbygoogle"
+  style="display:block"
+  data-ad-client="ca-pub-2143382342376111"
+  data-ad-slot="7335241488"
+  data-ad-format="auto"
+  data-full-width-responsive="true"></ins>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  
+
+        <div class="banner-top"> 
+            <div class="banner-main-container">
+                <h1>Nigeria is set to become one of top 5 economies in the world</h1>
+                <p><span>| markets</span></p>
+
+                <div class="current-news-head">
+                    <a href="https://www.forbes.com/sites/digital-assets/2023/10/24/bitcoin-stocks-rally-as-etf-prospects-lead-to-crypto-short-squeze/?utm_source=for_you_2">
+                    <h3>Bitcoin stocks rally as EFT prospects lead to
+                        crypto short squeez
+                    <span>Forbes</span></h3>
+                    </a>
+                    <hr>
+                    <a href="https://www.forbes.com/sites/danalexander/2023/10/24/bad-accounting-or-fraud-trumps-profit-numbers-dont-add-up/">
+                    <h3>Bad accounting or fraud? Trump's profit numbers don't add up
+                    <span>Forbes</span></h3>
+                    </a>
+                    <hr>
+                    <a href="https://www.analyticsinsight.net/web-stories/top-5-coins-under-1-to-consider-in-october-2023/">
+                    <h3>Top 5 coins under $1 to consider in July 2024
+                    <span>analyticsinsight</span></h3>
+                    </a>
+                    <hr>
+                    <a href="https://www.analyticsinsight.net/10-ways-to-make-money-fom-bitcoin-trading">
+                    <h3>10 ways to make money from bitcoin trading
+                    <span>analyticsinsight </span></h3>
+                    </a>
+                    <hr>
+
+                </div>
+            </div>
+            </div>
+
+            <section class="about">
+                <a href="https://www.fox10phoenix.com/video/1287191">
+                <div class="about-image">
+                <img src="../IMAGES/tIMAGES/istockphoto-480652712-612x612.jpg" alt="">
+                </div>
+             <div class="about-content">
+            <p>What next for new cars? Ford has the answer</p>
+            <p class="item">fox10phoenix</p>
+             </div>
+                </a>
+            <div>
+            </section>
+            <hr>
+
+            <section class="about">
+                <a href="">
+                <div class="about-image">
+                <img src="../IMAGES/tIMAGES/istockphoto-168351414-612x612.jpg" alt="">
+                </div>
+             <div class="about-content">
+            <p>Agri-business </p>
+            <p class="item">K24</p>
+             </div>
+                </a>
+            <div>
+            </section>
+            <hr>
+            
+            <section class="about">
+                <a href="https://africa.businessinsider.com/local/markets/top-african-countries-for-real-estate-investment/5fdzbsj">
+                <div class="about-image">
+                <img src="../IMAGES/tIMAGES/istockphoto-511061090-612x612.jpg" alt="">
+                </div>
+             <div class="about-content">
+            <p>Top african countries for real estate investment.</p>
+            <p class="item">businessinsider</p>
+             </div>
+                </a>
+            <div>
+            </section>
+            <hr>
+
+            <section class="about">
+                <a href="">
+                <div class="about-image">
+                <img src="../IMAGES/tIMAGES/istockphoto-1322144460-612x612.jpg" alt="">
+                </div>
+             <div class="about-content">
+            <p>How to fertilize banana stalk plantation </p>
+            <p class="item">agribusiness.com</p>
+             </div>
+                </a>
+            <div>
+            </section>
+          </div> 
     
-</body>
-</html>
+   </body>
+   </html>
