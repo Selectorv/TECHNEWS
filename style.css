@@ -453,7 +453,7 @@ article:last-child{
     border-bottom: none;
 }
 .main-container-right img{
-    width: 100px;
+    width: 120px;
     height: auto;
     align-self:center;
     font-family: var(--heading);
