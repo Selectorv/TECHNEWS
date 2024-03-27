@@ -30,6 +30,9 @@ header{
     z-index: 1;
     
 }
+.logo a{
+    text-decoration: none;
+}
 .logo h2{
     font-size: 40px;
     color: rgb(26, 131, 167);
