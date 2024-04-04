@@ -2,60 +2,59 @@
 let questions = [
     {
         numb: 1,
-
-        question:"Which is the largest continet on planet Earth?",
-        answer:"Asia",
+        question:"What does DNA stand for?",
+        answer:"Deoxyribonucleic acid",
         options:[
-            "Europe",
-             "Asia",
-             "Africa",
-             "America"
+             "Detoxificating Nutral Acid",
+             "Deoxyribonucleic Acid",
+             "Dental Number of Animals",
+             "Decabornate Acid"
 
         ]
     },
     {
         numb: 2,
-        question:"Who was the founder of microsoft company?",
-        answer:"Bill Gates",
+        question:"Which is the main gas that makes Earth's atmosphere?",
+        answer:"Nitrogen",
         options:[
-            "Elon Musk",
-            " Steve Jobs",
-            "Mark Zuckerberg",
-            "Bill Gates"
+            "Oxygen",
+            "Air",
+            "Hydrogen peroxide",
+            "Nitrogen"
         ]
     },
     {
         numb: 3,
-        question:"Name the African leader who was anti-apartheid activist?",
-        answer:"Nelson Mandela",
+        question:" which metal is the best conductor of electricity?",
+        answer:"Silver",
         options:[
-            "Nelson Mandela",
-            "Muammar Gaddafi",
-            "Jomo Kenyatta",
-            "Olesegun Obasanjo"
+            "Silver",
+            "Gold",
+            "Iron",
+            "Copper"
 
         ]
     },
     {
         numb: 4,
-        question:"England is ruled by?",
-        answer:"Monarch",
+        question:"Which is the fastest land animal in the world?",
+        answer:"Cheetah",
         options:[
-            "President",
-            "Monarch",
-            "Prime Minister",
-            "Chief Minister"
+            "Lion",
+            "Elephant",
+            "Cheetah",
+            "Leopard"
         ]
     },
     {
         numb: 5,
-        question:"Which is the odd one out?",
-        answer:"Yam",
+        question:"What does USB stand for?",
+        answer:"Universal Serial Bus",
         options:[
-            "Yam",
-            "Mango",
-            "Orange",
-            "WaterMelon"
+            "Universal State  Bus",
+            "Universal Serial  Bank",
+            "Bank of State",
+            "Universal Serial Bus"
         ]
     },
 

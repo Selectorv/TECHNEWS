@@ -57,9 +57,13 @@
             text-align: left;     
         }
         .numbertext{
-            color: rgb(168, 166, 166);
+            
+            color: #f2f2f2;
             font-size: 12px;
-            top: 40px;   
+            padding: 8px 12px;  
+            position: absolute;
+            top: 0;
+            z-index: 1;
         }
         .active{
             background-color: #717171;
@@ -170,8 +174,8 @@
             <div class="numbertext">3 / 10</div>
             <a href="Documents/sports.html" target="_parent">
             <img src="IMAGES/tIMAGES/pexels-photo-936075.jpeg" alt="" style="width: 100%; " >
-            <div class="text">Olympic games 2024 full schedule at the Paris<br>
-                | <span> olympics</span>
+            <div class="text">Olympic games 2024 full schedule at the Paris: 26july - 11 August, 2024<br>
+                | <span> olympics.com</span>
             </div>
             </a>
         </div>
@@ -190,10 +194,10 @@
         
         <div class="mySlides fade">
             <div class="numbertext">5 / 10 </div>
-            <a href=" https://www.theguardian.com/Australia-news/2023/oct/05/new-king-charles-image-coins-royal-australian-mint " target="_parent">
-            <img src="IMAGES/tinfied (1)/tinified (1)/DoE-St-Helena-08-Parade-walkabout-2535.jpg" alt="" style="width: 100%;">
-            <div class="text">King Charles coins unvailed at Royal Australian Mint in Canbrerra
-                <br>| <span>theguardian</span>
+            <a href=" https://lkphx.net/ttBv " target="_parent">
+            <img src="IMAGES/9a8d6828-e18a-46c7-820f-ce67a94c3c1e.webp" alt="" style="width: 100%;">
+            <div class="text">Husband demands divorce in letter, wife's brilliant reply makes him regret every word
+                <br>| <span>loansocieties.com</span>
             </div>
             </a>
         </div>
@@ -240,10 +244,10 @@
         
         <div class="mySlides fade">
             <div class="numbertext">10 / 10 </div>
-            <a href="https://www.theguardian.com/news/datablog/202/apr/19/twitter-music-app-100-most-followed-musicians" target="_parent">
-            <img src="IMAGES/tinfied (1)/tinified (1)/images (5).jpeg" alt="" style="width: 100%;" >
-            <div class="text">Eight of the most followed Twitter accounts
-                are musicians Justin Bieber,Lady Gaga and Katy Perry...
+            <a href="https://olympics.com/en/news/boxing-mixed-martial-arts-biaggio-ali-walsh-grandson-muhammad-ali-interview" target="_parent">
+            <img src="IMAGES/17121370271817331833698186628806.avif" alt="" style="width: 100%;" >
+            <div class="text">The most valuable lesson my grandfather Muhammad Ali taught me:Biaggio Ali Walsh<br>
+                |<span>olympics.com</span>
             </div>
             </a>
         </div>
@@ -255,7 +259,7 @@
 
    <script>
 
-    var timeOut = 2000;
+    var timeOut = 6000;
     var slideIndex = 0;
     var autoOn = true;
 
@@ -266,12 +270,12 @@
         if (autoOn == true && timeOut < 0){
             showSlides();
         }
-        setTimeout(autoSlides, 5);
+        setTimeout(autoSlides, 10);
     }
       
         function prevSlides(){
 
-            timeOut = 2000;
+            timeOut = 6000;
 
             var slides = document.getElementsByClassName("mySlides");
             var dots = document.getElementsByClassName("dot");

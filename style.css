@@ -30,8 +30,10 @@ header{
     z-index: 1;
     
 }
+
 .logo a{
     text-decoration: none;
+
 }
 .logo h2{
     font-size: 40px;
@@ -51,6 +53,7 @@ header{
     font-size: 16px;
     font-weight: 400;
     cursor: pointer;
+    margin-left: 5rem;
 }
 .navbar ul li a{
     border-right: 1px solid #bbb;
@@ -92,6 +95,31 @@ header{
     display: table;
     border: 1px green;
 }
+/*social icons*/
+   .social-icons {
+    flex: 0 1 10%;
+    display: block ;
+    justify-content: center;
+    margin: 0 auto;
+   }
+ .social-icons .fa-brands, .fa-solid{
+    background-color: white;
+    color: #201a1c;
+    font-size: 1.4rem;
+ }
+ .social-icons ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+ }
+ .social-icons ul li{
+    padding: 10px;
+    text-decoration: none;
+    list-style-type: none;
+ }
+
+
+
 
 /*mobile menu*/
 .dropdown_menu {
@@ -151,12 +179,37 @@ header{
     margin-right: 20px;
     cursor: pointer;
 }
+.scrollmenu{
+    position: absolute;
+    position: sticky ;
+    top: 0;
+    background-color: #fff;
+    overflow-x: auto;
+    white-space: nowrap;
+    width:100% ;
+    z-index: 1;
+    
+
+    
+}
+.scrollmenu a{
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    color: #0d0a0b;
+    font-size: 16px;
+}
+.scrollmenu a:hover{
+    background-color: gainsboro;
+}
+
 
 /*banner*/
 h4{
     text-align: center;
     font-weight: 200;
-    color: #878787;
+    color: #bdbcbc;
 }
 .banner{
     overflow: hidden;
@@ -509,20 +562,21 @@ article div{
     text-decoration: none;
     text-align: center;
     margin: 20px 10px ;
-    line-height: 0.4;   
+     
 }
 .Leisure a {
     text-decoration: none;
-    color: white;  
-    padding-top: 0; 
+    color: #000;  
+    padding-top: 0;
 }
 .Leisure p span{
     font-size: 25px;
-    color: rgb(109, 255, 47);
+    color: #fff;
 }
 .Leisure p{
     color: #fff;
     padding-top: 0;
+    line-height: 1.4;
 
 }
 .bottom h1{
@@ -543,7 +597,7 @@ article div{
         color: green;
         padding: 10px;
     }
-    hr{
+   .bottom hr{
         background-color: green;
         margin: 5px;
     }   
@@ -582,7 +636,20 @@ article div{
             display: block;
             color: rgb(26, 131, 167);
              text-align: center;
-        }  
+        } 
+        .scrollmenu{
+             height: 40px ;
+             font-size: 16px;
+             padding: 0;
+            
+        }
+
+
+
+        .social-icons{
+            display: none;
+        }
+       
     }
 
 @media(min-width:768px){
@@ -599,6 +666,9 @@ article div{
     .container-bottom-left img{
         min-width: 100%;
     }  
+    .scrollmenu{
+        display: none;
+    }
     
     
 }
