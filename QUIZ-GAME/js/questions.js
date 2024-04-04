@@ -3,7 +3,7 @@ let questions = [
     {
         numb: 1,
         question:"What does DNA stand for?",
-        answer:"Deoxyribonucleic acid",
+        answer:"Deoxyribonucleic Acid",
         options:[
              "Detoxificating Nutral Acid",
              "Deoxyribonucleic Acid",
