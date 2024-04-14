@@ -261,14 +261,14 @@
 
    <script>
 
-    var timeOut = 6000;
+    var timeOut = 8000;
     var slideIndex = 0;
     var autoOn = true;
 
     autoSlides();
 
     function autoSlides() {
-        timeOut = timeOut - 20;
+        timeOut = timeOut - 30;
         if (autoOn == true && timeOut < 0){
             showSlides();
         }
@@ -277,7 +277,7 @@
       
         function prevSlides(){
 
-            timeOut = 6000;
+            timeOut = 8000;
 
             var slides = document.getElementsByClassName("mySlides");
             var dots = document.getElementsByClassName("dot");
