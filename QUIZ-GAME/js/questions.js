@@ -25,7 +25,7 @@ let questions = [
     },
     {
         numb: 3,
-        question:" which metal is the best conductor of electricity?",
+        question:" Which metal is the best conductor of electricity?",
         answer:"Silver",
         options:[
             "Silver",

@@ -917,6 +917,7 @@ footer p{
         font-size: 35px;
     }
     .toggle_btn{
+        display: none;
         padding-right: 2px;
         
     }    
