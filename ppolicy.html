@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="favicon_io (17)/favicon.ico" />
@@ -34,19 +32,286 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2143382342376111"
      crossorigin="anonymous"></script>
 
-     <link rel="stylesheet" href="../TECHNEWS/style.css">
-     <style type="text/css"></style>
+     <link rel="stylesheet" href="../TECHNEWS/style.css.">
+     <style>
+
+header{
+    position: relative;
+    background-color: #fff;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    margin-top: 0;
+    justify-content: space-between;
+    box-shadow: 0px 3px 10px 0 rgb(80,119,242,0.3);
+    z-index: 1;
+    
+}
+
+
+.logo a{
+    text-decoration: none;
+    margin: 5px 10px;
+    
+
+}
+.logo h2{
+    font-size: 38px;
+    color: rgb(26, 131, 167);
+}
+
+.logo h2::first-letter{
+    font-size: 43px;
+    color: red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.logo h3{
+    font-size: 35px;
+    font-family: 'sofia';
+    color: #04AA6D;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    gap: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    margin-left: 5rem;
+}
+.navbar ul li a{
+    border-right: 1px solid #bbb;
+    text-decoration: none;
+    color: #000;
+    padding: 5px;
+}
+.navbar ul li a:hover{
+    color: rgb(9, 87, 113);
+}
+.navbar ul li a:active{
+    background-color: rgb(26, 131, 167);
+    color: #fff;
+}
+.dropdown_menu {
+    display: hidden;
+    position: absolute;
+    right: 0;
+    top: 100px;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    background-color: #fff;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);     
+}
+.dropdown_menu li a{
+    padding-top: 4rem;
+    padding: 0.4rem;
+    display: flex;
+    align-items: left;
+    justify-content:left ;
+    text-decoration: none;
+    margin-top: 20px;
+    width: 100%;
+}
+.dropdown_menu.open {
+    height: 100vh;
+}
+.dropdown_menu.open li a{
+    font-weight: 400;
+    color: #000;
+    margin-top: 10px;
+}
+.dropdown_menu li{
+    padding: 0.1rem;
+    display: flex;
+    align-items: left;
+    justify-content:left ;
+    text-decoration: none;
+}
+.dropdown_menu li a:hover{
+    background-color: rgb(26, 131, 167);
+    color: #fff;
+}
+
+.scrollmenu{
+    position: absolute;
+    position: sticky ;
+    top: 0;
+    background-color: #fff;
+    overflow-x: auto;
+    white-space: nowrap;
+    width:100% ;
+    z-index: 1;
+    display: none;
+    
+
+    
+}
+ .scrollmenu a{
+    display: inline-block;
+    text-align: center;
+    padding: 0 4px;
+    text-decoration: none;
+    color: #0d0a0b;
+    font-size: 15px;
+}
+ .scrollmenu a:hover{
+    background-color: gainsboro;
+}
+   h1{
+    text-align: center;
+   }
+   @media (max-width:780px){
+       .scrollmenu{
+        display: block;
+       }
+       .navbar ul li{
+        display: none;
+       }
+       .toggle_btn{
+    display: block;
+    
+
+   }
+   }
+   footer{
+    background: rgb(0, 8, 11);
+    overflow: hidden;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    
+}
+/*footer default style*/
+footer a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+footer h2{
+    
+   color: white;
+    margin-bottom: 2rem;
+    cursor: pointer;    
+}
+footer p{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+/*footer content*/
+.footer_content{
+    padding: 2rem;
+}
+.footer_content .footer_container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.footer_content .links ul li a{
+    text-decoration: none;
+    list-style-type: none;
+}
+/*contact*/
+
+.footer_content .logo{
+    margin-bottom: 2rem;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+}
+.footer_content .logo:first-letter{
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.footer_content .contact .icon{
+    font-size: 24px;
+    margin-right: 5px;
+}
+.footer_content .social_media_links{
+    margin-top: 2rem;
+}
+.footer_content .social_media_links .icon{
+    font-size: 24px;
+    color: black;
+    margin-right: 1rem;
+    background-color: #fff;
+    margin-bottom: 2rem;
+    justify-items: right;
+}
+/*info*/
+.footer_content .info{
+    margin-left: 3rem;
+
+}
+/*newslette*/
+.newsletter h3{
+    margin-bottom: 20px;
+}
+.footer_content .newsletter input{
+    border: 1px solid #000;
+    padding: 8px 15px;
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    box-sizing: border-box;
+    color: #807f7f;
+}
+.footer_content .newsletter input[type=text],select{
+    background-color: white;
+    border: 1px #000;
+    padding: 2 8px;
+    color: black;
+    min-height: 40px;
+}
+.footer_content .newsletter input[type=submit] {
+    background-color: rgb(26, 131, 167);
+    width: 100%;
+    padding: 0 8px;
+    min-height: 35px;
+    color:  black;
+}
+/*footer copyright*/
+.footer_copyright{
+    width: auto;
+    margin-top: 2rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer_content .footer_container{
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+    .footer_content .newsletter{
+        margin-top: 3rem;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+        
+     </style>
      
-
-
-
-    <title>privacy and policy</title>
 </head>
-<body>
-    <div>
-        <header>
-
-            <header>
+    <body>
+         <header>
                 <div class="logo">
                      <a href="index.html"><h2>The Region</h2></a>
                 </div>
@@ -108,7 +373,7 @@
         (adsbygoogle = window.adsbygoogle || []).push({});
       </script>
          
-      <div class="content">
+      
          <h1>Privacy Policy</h1>
          <p>Last updated: March 22, 2024</p>
          <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
@@ -286,7 +551,7 @@
          <li>By email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="274b4e4b4e4649494649435e131367404a464e4b0944484a">[email&#160;protected]</a></li>
          </ul><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script> 
 
-      </div>
+      
     
   <footer>
     <div class="footer_content">
@@ -380,7 +645,5 @@
 
 
 
-</body>
-</html>
 
 

@@ -24,6 +24,7 @@ header{
     justify-content: space-between;
     box-shadow: 0px 3px 10px 0 rgb(80,119,242,0.3);
     z-index: 1;
+
     
 }
 
@@ -408,9 +409,9 @@ width: unset;
    }
 }
 footer{
-    background: rgb(246, 236, 197);
+    background: black;
     overflow: hidden;
-    color: black;
+    color: #fff;
     display: flex;
     flex-direction: column;
     
@@ -419,13 +420,13 @@ footer{
 /*footer default style*/
 footer a{
     text-decoration: none;
-    color: black;
+    color: white;
     
 }
 
 footer h2{
     
-   color: black;
+   color: white;
     margin-bottom: 2rem;
     cursor: pointer;    
 }
@@ -433,7 +434,7 @@ footer p{
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
-    color: black;
+    color: white;
 }
 
 /*footer content*/
