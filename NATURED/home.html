@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../favicon_io (17)/favicon.ico">
+    <title> Natured</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+   
+<link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css ">
+
+
+
+<link rel="stylesheet" href="style.css">
+ <style type="text/css"></style>
+       <style>
+    
+    .navbar {
+        display: flex;
+        
+    }
+
+    .logo span{
+    background-color: rgb(168, 219, 91);
+}
+
+
+    .navbar .links ul li a{
+        font-size: 14px;
+        color: black;
+    }
+    .navbar .links ul li a:hover{
+        background-color: #04935e;
+        color: white;
+
+    }
+  .scrollmenu{
+    background-color: gainsboro;
+    margin-bottom: 0;
+    margin-left: 30%;
+  }  
+  .scrollmenu h4{
+    text-align: center;
+  }   
+  .header .logo{
+    z-index: 1;
+  }
+
+.side-bar{
+        float: right;
+        position: fixed;
+        width: 30%;
+        height: 100vh;
+        top: 0;
+        margin-left: 10px;
+       background: rgba(255, 255, 255, 0.6);
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+        z-index: 1; 
+        padding-bottom: 30px;
+        
+        
+     } 
+    
+    .side-bar span{
+    background-color: rgb(168, 219, 91);
+}
+
+     .side-bar h3{
+        background-color: darkgreen;
+        color: white;
+        font-size: 30px;
+       font-family: Georgia, 'Times New Roman', Times, serif;
+       padding: 1px;
+       margin: 30px 0 0 10px;
+       
+
+}
+
+
+     .side-bar .logo_img img{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-top: 50px;
+        align-items: center;
+     }
+
+     .side-bar .logo h2{
+        font-size: 1.15rem;
+        font-weight: 600;
+        margin-left: 15px;
+        font-family:  Georgia, 'Times New Roman';
+     }
+     .side-bar .links{
+        list-style-type: none;
+        margin-top: 20px;
+        height: calc(100% - 140px);
+        color: #000;
+     }
+     .side-bar .links h4 a{
+        text-decoration: none;
+         color: maroon;
+        font-size: 20px;
+        font-weight: 700;
+        
+     }
+     .side-bar .links li{
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+    
+     }
+     .side-bar .links li:hover{
+        background: lightgray;
+     }
+     .side-bar .links li i{
+        padding: 12px 10px;
+     }
+
+     .side-bar .links li a{
+        margin-top: 8px;
+        color: #000;
+        text-decoration: none;
+        font-weight: 700;
+        padding: 5px;
+        white-space: nowrap;
+     }
+     .side-bar:hover{
+        background-color: #e7e7e7;
+     }
+     .homepage{
+        float: right;
+        margin: 0;
+        background: #00000010;
+        margin-top: 0;
+        width: 70%;
+    
+     }
+     
+     .homepage img{
+        width: 100%;
+        background: #00000020;
+        background-blend-mode: darken;
+        margin-top: 0;
+     }
+     .content{
+        text-align: left;
+
+        margin: 0;
+        padding: 20px;
+        background-color: gainsboro;
+          
+     }
+     .homepage h2, p{
+        margin-left: 20px;
+        
+
+     }
+     .section{
+        background-color: red;
+     }
+
+     .section-intro img{
+        background-color: transparent;
+    height: 90vh;
+    background-size:cover ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+   
+.section-intro  h1{
+    background-color: #00000020;
+    text-align: center;
+    margin-top: 0;
+    color:  #ffff;
+    font-size: 3em;
+    font-weight: 700;
+     
+}
+.section-intro  header {
+    width: 70%;
+    
+    background-color: transparent;
+    display: flex;
+    flex: 4;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 20rem;
+}
+.link-to-book-wrapper{
+    flex: 1;
+}
+
+.about-section{
+    display: flex;
+    align-items: center;
+    background-color: #c31212c0;
+    padding: 50px 30px;
+}
+  
+     .images img{
+       width: min(25rem, 100%);
+     }
+
+     .container{
+    position: relative;
+    width: 70%;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-top: 4%;
+    margin-right: 0;
+}
+.container .card{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 10px 5px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease-in-out;
+    margin-top: 0;
+    margin-left: 5px;
+}
+.container .card .imgBx{
+    position: relative;
+    width: 300px;
+    height: 260px;
+    top: 10px;
+    left: 20px;
+}
+.container .card .imgBx img{
+    position: relative;
+    width: 100%;
+    height: 70%;
+}
+.imgBx img:hover{
+    transform: scale(1.1);
+}
+.card h2{
+    color: #04935e;
+}
+footer{
+position: relative;
+    width: 70%;
+    height: 40%;
+    float: right;
+    background-color: rgb(175, 173, 173);
+}
+hr{
+    background-color: red;
+}
+
+
+
+     
+    @media(max-width:770px){
+        .logo h3{
+            background-color: darkgreen;
+            color: white;
+            font-size: 25px;
+            
+        }
+        .navbar{
+            display: block;
+        }
+        
+        .side-bar{
+            
+            height: auto;
+            background-color: #fff;
+        }
+        .side-bar .logo_img img{
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+        }
+       .side-bar:hover{
+            width: 280px;
+            background-color: rgb(250, 250, 252);
+        
+            opacity: 100%;
+            transition: 1s ease ;
+
+        }
+        .side-bar .links h4{
+            font-size: 20px;
+            text-align: center;
+        }  
+        .side-bar .links li a
+        {   font-weight: 400px;
+            line-height: 1;
+            
+            display: block;
+            margin-left: 20px;
+
+        }
+
+        .side-bar:hover  li a{
+            display: block;
+        }
+        .side-bar .links li i{
+            padding-left: 30px;
+            font-size: 15px;
+            
+        }
+      
+
+    
+        
+        @media(max-width:460px){
+
+            .logo{
+        background-color: none;
+        
+        margin-right: 0;
+        
+        
+    }
+           
+           .navbar .links ul li{
+            padding: 0;
+           }
+           .navbar .links ul li a{
+            font-size: 15px;
+            display: flex;
+    
+           
+           }
+            .side-bar{
+                width: 25%;
+            }
+            .homepage{
+                width: 75%;
+            }
+           
+            .side-bar .links li a{
+                font-size: 12px;
+                margin-left: 8px;
+            }
+            hr{
+                display: none;
+            }
+            .side-bar h3{
+                font-size: 25px ;
+                margin-left: 20px;
+            }
+           
+            .side-bar .logo_img img{
+        
+                width: 100px;
+                height: 100px;
+            }
+            .container{
+                float: right;
+                width: 75%;
+            }
+            .container .card .imgBx{
+             width: 260px;
+             height: 260px;
+           top: 10px;
+           left: 20px;
+           display: grid;
+           grid-template-columns: 2 1fr;
+            }
+            .container .card .imgBx img{
+                width: 100%;
+            }
+           
+           
+            .footer_content{
+                padding: 0;
+                font-size: 16px;
+            }   
+        }    
+    }
+    @media(max-width:460px){
+    .section-intro header h1{
+       font-size: 40px;
+       margin-top: 5px;
+       
+    }
+    .section-intro img{
+    height: 60vh;
+    }
+        .footer_content .info {
+              color: #04935e;
+              margin-left: 5px;
+        }
+        .footer_content h3{
+            margin-top: 20px;
+            font-size: 18px;
+            padding-left: 5px;
+        }
+    }
+        
+       </style>
+</head>
+<body>
+        <header>
+                   
+            <div class="logo">
+
+            </div>
+           <div class="navbar">
+               <div class="links">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    
+                    <li><a href="aboutUs.html">About</a></li>
+                    
+                    <li><a href="contacts.html">Contacts</a></li>
+                </ul>
+                    
+
+
+
+                   
+</div>
+         
+</header>
+
+
+       <hr>
+  
+    <div class="container-a">
+        
+        <aside class="side-bar">
+            <h3><span>//</span>Natured</h3>
+           
+            <div class="logo_img">
+                
+        <img src="../IMAGES N/images (56).jpeg" alt="">
+            </div>
+          <ul class="links">
+            <h4><a href="https://www.wikihow.com/essentialnutrients">Essential Nutrients</a></h4>
+            <hr>
+
+            <ul>
+                <li><a href="fruits.html">Fruits & Salad</a></li>
+                <li><a href="Carbohydrates.html">Carbohydrates</a></li>
+                <li><a href="Beverage.html">Beverage</a></li>
+                <li><a href="vegetable.html">Vegetables</a></li>
+                <li><a href="proteins.html">Proteins</a></li>
+                <li><a href="spices.html">Spices</a></li>
+                <li><a href="Fats.html">Fats</a></li>
+             </ul>
+          
+             
+
+        </aside>
+    </div>
+    
+    
+               <div class="homepage">
+
+                
+               
+
+                <section class="section-intro">
+                      <img src="../IMAGES N/photo-1554980291-c3e7cea75872.jpeg" alt="">  
+
+                    <header>
+                      <h1> Get Started </h1>
+                    </header>
+                        
+               </section>
+
+
+               <div class="content">
+                <h2> The Essential Nutrients Found in organic food</h2>
+                <p>Healthy body requires healthy diet, and healthy diet is found from natural
+                     foods which are fully packed with high nutritional value.
+                    Natural foods are linked to traditional diet by which most of them are medicinal.
+                     Keep in mind your body should repair 
+                itself and this is done by consuming good healthy food.</p>
+        
+    
+            </div>
+        </div>
+
+
+        
+
+                <div class="container">
+        <div class="card">
+
+
+           
+
+            <div class="imgBx">
+                <a href="Carbohydrates.html"><img src="../IMAGES N/IMG20240529090136.jpg" alt=""></a>
+                <h2>Sweet potato</h2>
+                <p>Gluten-free flour</p>
+
+            </div>
+
+        </div>
+        
+        <div class="card">
+            <div class="imgBx">
+                <a href="Fats.html"><img src="../IMAGES N/Rabbit meat.jpg" width="200px" alt=""></a>
+                <h2>Rabbit meat</h2>
+                <p>Simple to cook rabbit meat using animal fat</p>
+
+            </div>
+            
+
+        </div>
+        
+
+
+        <div class="card">
+            <div class="imgBx">
+                <a href="vegetable.html"><img src="../IMAGES N/images (50).jpeg" ></a>
+                <h2>Salad</h2>
+                <p>vegetable salad rich in protein
+            </div>
+            </div>
+            <hr>
+            <div class="card">
+                <div class="imgBx">
+                    <a href="fruits.html">
+                        <img src= "../IMAGES N/images (47).jpeg"  alt=""></a>
+                    <h2>Jackfruit</h2>
+                    <p>High nutritional value of jackfruit.</p>
+    
+                </div>
+    
+            </div>
+            
+
+
+            <div class="card">
+                <div class="imgBx">
+                    <a href="spices.html"><img src="../IMAGES N/photo-1615484478243-c94e896edbae.jpeg" alt=""></a>
+                    <h2>Ginger</h2>
+                    <p>The reason why ginger root stands out </p>
+    
+                </div>
+    
+            </div>
+            
+            <div class="card">
+                <div class="imgBx">
+                    <a href="Beverage.html"><img src="../IMAGES N/cup of tea.jpg" width="200px" alt=""></a>
+                    <h2>Tea</h2>
+                    <p>How a cup of coffee and tea stimulates our body.</p>
+    
+                </div>
+    
+            </div>
+            
+                
+
+
+            <div class="card">
+                <div class="imgBx">
+                    <a href="proteins.html"><img src="../IMAGES N/images (51).jpeg" alt=""></a>
+                    <h2> Bone broth</h2>
+                    <p>Source of collagen for healthy hair, skin and nails</p>
+    
+                </div>
+    
+            </div>
+                </div>
+           
+            
+          
+            
+    
+            
+        
+
+        <footer>
+            <div class="footer_content">
+               <div class="footer_container">
+                  <!--contact-->
+                 
+                    <div class="col contact">
+                      
+
+                        <!--<h1>Village taste</h1>-->
+                        <h3>Support this food and nutrition website improve by giving your opinion</h3><br><br>
+
+                         <p><ion-icon class="icon" name="mail"></ion-icon>musconews.com</p>
+                         <p><ion-icon class="icon" name="location"></ion-icon>Kakamega county, Kenya </p>
+                         
+
+            <div class="social_media_links">
+                 <a href="http://facebook.com" target="_blank">
+                <ion-icon class="icon" name="logo-facebook"></ion-icon>
+            </a>
+            <a href="http://instagram.com" target="_blank">
+                <ion-icon class="icon" name="logo-instagram"></ion-icon>
+            </a>
+            <a href="http://twitter.com" target="_blank">
+                <ion-icon class="icon" name="logo-twitter"></ion-icon>
+            </a>
+            </div>
+                    </div>
+        
+
+
+
+                 
+
+                      <div class=" info">
+                        <h2>Info</h2>
+                        <p><a href="contacts.html">Contacts </a></p>
+                        <p><a href="aboutUs.html">About</a></p>
+                        <p> Terms and conditions</p>
+                        <p><a href="ppolicy.html">Privacy Policy</a></p>
+                     </div>
+            
+                     
+                         <div class="newsletter">
+                          
+                         <h3>Get updates on nutrition tips</h3>
+                          <form action="https://formsubmit.co/musconews@gmail.com" method="post" class="newsletter-form" >
+                              <input type="text" placeholder="Your Name" />
+                          <input type="text" placeholder="Your Email" />
+                          <input type="submit" value="Submit">  
+                          <input type="hidden" name="_autoresponse" value="successful">
+                          </form>
+                          </div>
+                        </div>
+            
+            
+            
+                       <!--footer copyright-->
+                     <div class="footer_copyright">&copy; Copyright 2024 Natured</div>
+                        </div>
+                        
+                    
+                     </footer>  
+               
+               
+               
+               <script src="script.js"></script>
+
+               <script type="script.js"></script>
+                  <script type="module" src="https://unpkg.com/ionicons@7.1.
+              0/dist/ionicons/ionicons.esm.js"></script>
+              
+              <script nomodule src="https://unpkg.com/ionicons@7.1.
+              0/dist/ionicons/ionicons.esm.js">
+              </script>
+              
+  
+        
+
+
+</body>
+</html>

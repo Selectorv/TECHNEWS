@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../favicon_io (17)/favicon.ico">
+    <title>About Natured </title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">     
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+     
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
+ 
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ 
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+ crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    
+ <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css ">
+ 
+
+  <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        width: 100%;
+        height: auto;
+        background-color: #f2f2f2;
+    }
+    .previous{
+        padding-left: 0;
+        margin-left: 0;
+        text-decoration: none;
+        justify-content: left;
+        text-align: left;
+        font-size: 30px;
+        font-weight: 600;
+        color: #000;
+        text-align: left;
+        align-items: left;
+    }
+    .heading{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 30px auto;
+    }
+    .heading h1{
+        font-size: 50px;
+        color: #000;
+        margin-bottom: 25px;
+        position: relative;
+    }
+    .heading h1::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        display: block;
+        margin: 0 auto;
+        background-color: #4caf50;
+    }
+    .heading p{
+        font-size: 18px;
+        color: rgb(32, 31, 31);
+        margin-bottom: 35px;
+        line-height: 1.5;
+        justify-content: center;
+        text-align: left;
+    }
+   
+    .container{
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        padding: 10px 20px;
+    }
+    .about{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 0;
+    }
+    .about-image{
+        flex: 1;
+        margin-right: 40px;
+        overflow: hidden;
+        place-items: center;
+    }
+    .about-image img{
+        width: min(25rem, 90%);
+        display: block;
+        transition: 0.5s ease;
+        place-items: center;
+    }
+    .about-image:hover img{
+        transform: scale(1.2);
+    }
+    .about-content{
+        flex: 1;
+        margin-top: 0;
+    }
+    .about-content h2{
+        font-size: 24px;
+        margin: 10px;
+        color: rgb(60, 59, 59);
+    }
+    .about-content h3{
+        margin: 10px;
+        color: rgb(60, 59, 59);
+    }
+    .about-content p{
+        margin-top: 0;
+        padding-top: 0;
+        font-size: 18px;
+        line-height: 1.5;
+
+    }
+    .about-content p a{
+        text-decoration: none;
+        color: #4caf50;
+    }
+    .about-content .read-more{
+        display: inline-block;
+        padding: 10px 20px;
+        background-color:  #4caf50;
+        color: #fff;
+        font-size: 19px;
+        text-decoration: none;
+        border-radius: 25px;
+        margin-top: 15px;
+        transition: 0.3s ease;
+    }
+    
+    @media(max-width:768px){
+        .heading{
+            padding: 0px 20px;
+        }
+        .heading h1{
+            font-size: 36px;
+
+        }
+        .heading p{
+            font-size: 17px;
+            margin-bottom: 20px;
+        }
+        .container{
+            padding: 0px;
+        }
+        .about{
+        
+            flex-direction: column;
+        }
+        .about-image{
+            margin-right: 0px;
+            margin-bottom: 20px;
+        }
+        .about-image img{
+            width: 20rem, 85%;
+        }
+        .about-content p{
+            padding: 0px;
+            font-size: 16px;
+            margin-bottom: 30%;
+        }
+        .about-content .read-more{
+            font-size: 16px;
+        }
+    
+
+    }
+  
+    
+</style>
+
+   
+
+</head>
+    
+  <body>
+          
+
+    <header>
+                   
+        <div class="logo">
+            <a href="home.html"><h3><span>//</span> Natured </h3></a>
+       </div>
+
+       <div class="navbar">
+           <ul class="links">
+                <li><a href="home.html">Home </a></li>
+               <li><a href="fruits.html">Fruits</a></li>
+                <li><a href="Carbohydrates.html">Carbohydrates </a></li>
+               <li><a href="Beverage.html">Beverage </a></li>
+               <li><a href="vegetable.html">Vegetables </a></li>
+               <li><a href="proteins.html">Proteins</a></li>
+               <li><a href="spices.html">Spices </a></li> 
+               <li><a href="Fats.html">Fats </a></li>
+               
+               
+           </ul>
+       </div>
+
+       <div class="toggle_btn">
+        <i class="fa-solid fa-bars"></i>      
+    </div>
+
+
+    <div class="dropdown_menu"> 
+        <div class="logo_img">
+            <img src="../IMAGES/images (56).jpeg" alt="">
+                </div>
+            
+            <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="aboutUs.html">About</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+            <li><a href="ppolicy.html">Privacy Policy</a></li>
+            <br>
+            <hr>
+            <br>
+            <li><a href="fruits.html">Fruits & Salad</a></li>
+            <li><a href="Carbohydrates.html">Carbohydrates</a></li>
+            <li><a href="Beverage.html">Beverage</a></li>
+            <li><a href="vegetable.html">Vegetables</a></li>
+            <li><a href="proteins.html">Proteins</a></li>
+            <li><a href="spices.html">Spices</a></li>
+            <li><a href="Fats.html">Fats</a></li> 
+           
+            </ul>
+    </div>
+</div>
+</header>
+
+<div class="scrollmenu" >
+<a href="home.html">Home |</a>
+<a href="fruits.html">Fruits & Salad |</a>
+<a href="Carbohydrates.html">Carbohydrates |</a>
+<a href="Beverage.html">Beverage |</a>
+<a href="vegetable.html">Vegetables |</a>
+<a href="proteins.html">Proteins |</a>
+<a href="spices.html">Spices |</a>
+<a href="Fats.html">Fats|</a>
+
+</div>  
+<section>
+    <div class="heading">
+       
+    <h1>About Natured Website</h1>
+    
+          <p> Natured website is an online platform that guides and updates you monthly on knowledge about <span><a href="https://www.organicfood.com">organic food</a>, </span>
+             its nutrition value and tips on healthy living. It is compiled and written by <cite>Lillian Nandy </cite>a web developer and <cite>Nehema Osman</cite> a 
+             nutritionist from Kenya.</p>
+    </div>
+        <div class="container">
+            <section class="about">
+                <div class="about-image">
+                    <div class="back_frame"></div>
+                    <img src="../IMAGES N/IMG_20230924_162149.jpg" alt="">
+
+                </div>
+                
+                
+                <div class="about-content">
+                    <h4>Natural or organic food is mainly associated with traditional food which was used as medicine. This shows 
+                        how organic food has a great impact and value on human body regarding to its essential nutrients.
+                    </h4>
+                   
+                    <h3>Facts</h3>
+                    <p>This website guides on food and nutrition only. Seek medical advice from your doctor or health expert 
+                        before following our guidelines pertaining to your medical condition.
+                  <h2>Acknowledgement</h2>
+                     <p>You can share or correct any information on this website to make us improve on creating and writing the best source of 
+                       healthy organic food and its valuable nutrients.
+                    </p>
+
+                    </p>
+                </div>
+
+            </section>
+        </div>
+          <div class="content">
+            <h3>Our Mission</h3>
+            <p>Is to make sure every month you get quality information, guidelines and updates on different food category 
+                and its nutritional value
+                
+            </p>
+            <h3>Vision</h3>
+            <p>Our goal to provide enough proven health studies on this article. You are warmly welcomed to join us improve it by adding your information
+                and opinion.
+            </p>
+
+          </div>
+
+             
+ 
+
+  <footer>
+    <div class="footer_content">
+       <div class="footer_container">
+          <!--contact-->
+         <div class="col contact">
+
+            <div class="col contact">
+                <div class="footer_logo">
+                    <h3><span>//</span>Natured</h3>
+                    </div>
+             
+                  
+                <h3>Support this food and nutrition website improve by giving your opinion</h3><br><br>
+
+
+   <div class="social_media_links">
+        <a href="http://facebook.com" target="_blank">
+       <ion-icon class="icon" name="logo-facebook"></ion-icon>
+   </a>
+   <a href="http://instagram.com" target="_blank">
+       <ion-icon class="icon" name="logo-instagram"></ion-icon>
+   </a>
+   <a href="http://twitter.com" target="_blank">
+       <ion-icon class="icon" name="logo-twitter"></ion-icon>
+   </a>
+   </div>
+                <br><br> 
+           </div>
+         
+
+            
+          
+         <p><ion-icon class="icon" name="location"></ion-icon>Kakamega County, Kenya</p>
+         <p><ion-icon class="icon" name="mail"></ion-icon>musconews.com</p>
+         <p><ion-icon class="icon" name="call"></ion-icon>+254-717066588</p>
+         </div>
+
+
+         <!--social links
+         <div class="social_media_links">
+              <a href="http://facebook.com" target="_blank">
+             <ion-icon class="icon" name="logo-facebook"></ion-icon>
+         </a>
+         <a href="http://instagram.com" target="_blank">
+             <ion-icon class="icon" name="logo-instagram"></ion-icon>
+         </a>
+         <a href="http://twitter.com" target="_blank">
+             <ion-icon class="icon" name="logo-twitter"></ion-icon>
+           </a>
+  <a href="http://youtube.com" target="_blank">
+      <ion-icon class="icon" name="logo-youtube"></ion-icon>
+           </a>  
+       </div>-->
+          
+          <!--info--> 
+         <div class="col info">
+            <h2>Info</h2>
+            <p><a href="aboutUs.html">About</a></p>
+            <p>Terms and conditions</p>
+            <p><a href="ppolicy.html">Privacy Policy</a></p>
+         </div>
+         
+             <div class="newsletter">
+             <h2>Get updates on nutrition tips </h2>
+              <form action="https://formsubmit.co/liliannandy44@gmail.com" method="post" class="newsletter-form" >
+                  <input type="text" placeholder="Your Name" />
+              <input type="text" placeholder="Your Email" />
+              <input type="submit" value="Submit">  
+              </form>
+              </div>
+            </div>
+           <!--footer copyright-->
+         <div class="footer_copyright">&copy; Copyright 2024  Natured</div>
+            </div>
+         </footer>        
+
+
+
+ <script src="../script.js"></script>
+
+</body>
+</html>
