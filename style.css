@@ -324,8 +324,6 @@ p span, a{
  .container .about-content p{  
     margin-top: 0;
     padding-top: 0;
-    
-    line-height: 1.5;
     margin-left: 0;
     
 }
@@ -366,7 +364,6 @@ p span, a{
 }
 .bottom-container p{
     margin-left: 20px;
-    font-size: 18px;
     list-style-type: circle;
 }
 .bottom-container h4{
@@ -379,7 +376,7 @@ p span, a{
     width: min(40rem, 100%);
 }
 p strong{
-    font-size: 20px;
+    font-size: 18px;
 }
 .note{
     background-color: rgb(242, 241, 241);
@@ -424,7 +421,7 @@ p strong{
         font-size: 36px;
     }
     .heading p{
-        font-size: 16px;
+        
         margin-bottom: 20px;
     } 
     .container{
@@ -442,8 +439,8 @@ p strong{
     }
     
     .about-content p{
-        padding: px;
-        font-size: 16px;
+        
+    
         margin-bottom: 20px;
         
     }
@@ -621,7 +618,7 @@ footer p{
     font-size: 28px;
     color: #fff;
     margin-right: 1rem;
-    background-color: red;
+    background-color: black;
 }
 /*footer copyright*/
 .footer_copyright{
