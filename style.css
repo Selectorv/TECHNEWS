@@ -185,9 +185,9 @@ header{
     margin: 20px;   
 } 
 .intro p{
-    font-size: 18px;
+
     margin: 20px;
-    line-height: 1.5;
+    
 }
 
 .heading{
@@ -304,7 +304,7 @@ p span, a{
    margin: 20px;
     color: #281f22;
     line-height: 1.5;
-    font-size: 20px;
+    font-size: 16px;
     
 }
 
@@ -573,7 +573,7 @@ footer p{
     color: #04AA6D;
 }
  .footer_logo{
-    width: 125px;
+    width: 130px;
     font-size: 25px;
     padding: 1px;
     background-color: darkgreen;
