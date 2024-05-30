@@ -7,6 +7,8 @@ body{
     width: 100%;
     height: auto;
     background-color: rgb(249, 250, 251);
+    margin: 0;
+    padding: 0;
     
 } 
 
@@ -20,7 +22,7 @@ header{
     height: 80px;
     display: flex;
     align-items: center;
-    padding: 30px;
+    padding: 25px;
     margin-top: 0;
     justify-content: space-between;
     box-shadow: 0px 3px 10px 0 rgb(80,119,242,0.3);
@@ -172,7 +174,14 @@ header{
    color: gray;
 }
 .intro{
-    margin: 30px;
+    
+    margin-left: 8px;
+}
+.intro p{
+    padding: 10px;
+    line-height: 1.5;
+    font-size: 16px;
+    
 }
 
 
@@ -182,22 +191,19 @@ header{
     font-size: 20px;
     color: yellowgreen;
     text-align: left;
-    margin: 20px;   
+    padding: 10px;
+      
 } 
-.intro p{
 
-    margin: 20px;
-    
-}
 
 .heading{
-    width: 90%;
+
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: left;
-    margin: 20px auto;
+    margin: 10px auto;
     margin-top: 40px;
 }
 .previous{
@@ -214,9 +220,10 @@ header{
 } 
 
 .heading h1{
-    margin: 0;  
+    margin: 5px;  
     text-align: left; 
     font-size: 40px;
+    padding: 10px;
 
 }
 .heading h1::after{
@@ -257,7 +264,6 @@ p span, a{
 }
 .about{
     display: flex;
-    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     margin-top: 0;
@@ -283,17 +289,18 @@ p span, a{
     place-items: center;
     margin: 20px 0;
 }
+.content{
+    padding: 10px;
+}
 .content h2{
     text-align: center;
-    padding: 10px 3.5px;
+    font-size: 22px;
+    padding: 20px;
+    margin: 10px;
 }
 .content h3{
     text-align: left;
-}
-.content h3{
-    padding: 0;
-    margin: 20px;
-    
+    padding: 10px;   
 }
 .heading h2 span{
     color: maroon;
@@ -301,7 +308,7 @@ p span, a{
 
 .content p{
     text-decoration: none;
-   margin: 20px;
+   padding: 10px;
     color: #281f22;
     line-height: 1.5;
     
@@ -310,7 +317,7 @@ p span, a{
 
 .about-content{
     flex: 1;
-    margin: 20px;
+  padding: 10px;
     
     line-height: 1.5;
 }
@@ -348,28 +355,29 @@ p span, a{
     width: 100%;
 }
 .bottom-container{
-    font-size: 20px;
     line-height: 1.5;
-    margin: 20px;
     padding-bottom: 30px;
+    
+    
 }
 .bottom-container .image{
     align-items: center;
-    margin: 40px;
+    margin: 10px;
 
 }
 .bottom-container h1, h3{
+    font-size: 20px;
     text-align: left;
     
 }
 .bottom-container p{
-    margin-left: 20px;
+    padding-left: 20px;
     list-style-type: circle;
 }
 .bottom-container h4{
     text-align: left;
     padding: 20px 2px;
-    margin-left: 20px;
+    
 }
 
 .bottom-container .image img{
@@ -381,11 +389,11 @@ p strong{
 .note{
     background-color: rgb(242, 241, 241);
     border-left: 8px #04935e;
-    margin: 20px;
+    margin: 10px;
     padding: 10px;
 }
 .note p{
-    
+    font-size: 20px;
     color: #281f22;
     text-align: left;
 }
@@ -394,56 +402,58 @@ p strong{
         font-size: 25px;
     }
 
+
     .dropdown_menu{
         display: block;
         float: right;
         width: unset;
         
         } 
+      
+        .about-content {
+            padding: 5px;
+            margin: 0;
+        }
+       
 }
 
 @media(max-width:768px){
     .intro, .note{
-        margin-left: 10px;
+    
         border-left: 8px solid #04935e;
         background-color: rgb(242, 241, 241);
-        font-size: 16px ;
+        
     }
     .header{
         width: 100%;
     }
     .heading{
         width: 100%;
-        padding: 0px 20px;
+        padding: 0px 10px;
         margin-bottom: 20px;
     }
     .heading h1{
-        font-size: 36px;
+        font-size: 30px;
+    
     }
     .heading p{
         
         margin-bottom: 20px;
     } 
     .container{
-        padding: 20px;
+        
         width: 100%;
         background-color: #fff;
     }
-    .about{
-    
-        flex-direction: column;
-    }
+   .about{
+    flex-direction: column;
+   }
     
     .about-image img{
-        width: min(40rem, 100%);
+        width: max(25rem, 90%);
     }
     
-    .about-content p{
-        
-    
-        margin-bottom: 20px;
-        
-    }
+   
     .about-content .read-more{
         font-size: 16px;
     }
@@ -474,9 +484,6 @@ display: block;
 
 }
 @media (min-width:1180px){
-   .content{
-    margin: 50px;
-   }
   
    .dropdown_menu{
     display: block;
@@ -570,7 +577,7 @@ footer p{
     color: #04AA6D;
 }
  .footer_logo{
-    width: 130px;
+    width: 100px;
     font-size: 25px;
     padding: 1px;
     background-color: darkgreen;
