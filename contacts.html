@@ -28,27 +28,23 @@
        background-size: cover;
        background-position: center;
     }
-    .logo{
-        padding: 2px;
-    }
+   
 
-     .logo h3{
+     .logo {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 30px;
         background-color: darkgreen;
         color: white;
         padding: 1px;
      }
    
 
-     .logo h3 span{
+     .logo  span{
     background-color: rgb(168, 219, 91);
     padding: 1px;
 }
 
-.logo h3{
-    font-size: 30px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: white;
-}
+
     
     .toggle_btn{
         display: none;
@@ -116,9 +112,9 @@
         float: left;
         position: absolute;
         
-        height: 100%;
-        top: 80px;
-        left: 0;
+        height: auto;
+        top: 100px;
+        left: 20px;
         background: rgba(255, 255, 255, 0.2);
         border-right: 1px solid rgba(255, 255, 255, 0.2);
         display: flex;
@@ -150,7 +146,7 @@
      }
      .side-bar .links h4{
         color: #000;
-        font-size: 25px;
+        font-size: 30px;
         font-weight: 700;
         margin-bottom: 10px;
      }
@@ -286,6 +282,7 @@ footer p{
     color: #000;
 }
 
+
      
     @media(max-width:770px){
         .toggle_btn{
@@ -300,7 +297,7 @@ footer p{
             padding-left: 10px;      
         }  
         .side-bar{
-            width: 100px;
+            width: auto;
             top: 150px;
         }
        .side-bar:hover{
@@ -310,7 +307,7 @@ footer p{
             transition: 1s ease ;
         }
         .side-bar .links h4{
-            font-size: 16px;
+            font-size: 20px;
             text-align: center;
         }  
         .side-bar .links li a
@@ -319,7 +316,7 @@ footer p{
             margin-left: 20px;
 
         }
-        .side-bar:hover  li a{
+        .side-bar:hover li a{
             display: block;
         }
         .side-bar .links li i{
@@ -340,10 +337,13 @@ footer p{
         }
         
         @media(max-width:460px){
-            .side-bar{
+            .side-bar {
+                display: block;
+                width: auto;
                 
-                width: 80px;
-                
+            }
+            .logo{
+                font-size: 20px;
             }
         }
 
@@ -367,7 +367,7 @@ footer p{
     <header>
                    
         <div class="logo">
-            <a href="index.html"><h3><span>//</span>Natured</h3></a>
+            <a href="index.html"><span>//</span>Natured</a>
        </div>
 
        <div class="navbar">
@@ -438,7 +438,7 @@ footer p{
     <aside class="side-bar">
        
       <ul class="links">
-        <h4>Contact Us</h4>
+        <h4>Social Media</h4>
         <hr>
         <li>
                 <i class="fa-solid fa-phone" ></i>
@@ -509,8 +509,9 @@ footer p{
   
                 <div class="col contact">
                     <div class="footer_logo">
-                        <h3><span>//</span>Natured</h3>
-                        </div>
+                            
+                        <a href="index.html"></a><span>//</span>Natured</a>
+                   </div> 
                  
                    
                     <h3>Support this food and nutrition website improve by giving your opinion</h3><br><br>
