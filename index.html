@@ -1,758 +1,491 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../favicon_io (17)/favicon.ico">
-    <title> Natured</title>
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<html lang="en">  
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="favicon_io (17)/favicon.ico" />
+        <meta name="google-adsense-account" content="ca-pub-2143382342376111" />
+        <meta name="google-site-verification" content="F3H8mJD28cWSFXnGNnENq0Hcuic9rir2cImU_Iu8G5g" />
+        <title>The Region</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
+      
+    <link rel="stylesheet" href="Roboto/Roboto-Black.ttf">
     <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
-crossorigin="anonymous" referrerpolicy="no-referrer" /> 
-   
-<link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css ">
-
-
-
-<link rel="stylesheet" href="style.css">
- <style type="text/css"></style>
-       <style>
-        
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" /> 
        
-    
-    .navbar {
-        display: flex;
-        
-    }
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css ">
 
-    .logo span{
-    background-color: rgb(168, 219, 91);
-}
-
-
-    .navbar .links{
-        
-        font-size: 14px;
-        color: black;
-    }
-    .navbar .links ul li a:hover{
-        background-color: #04935e;
-        color: white;
-
-    }
-  .scrollmenu{
-    background-color: gainsboro;
-    margin-bottom: 0;
-    margin-left: 30%;
-  }  
-  .scrollmenu h4{
-    text-align: center;
-  }   
-  .header .logo{
-    z-index: 1;
-  }
-  .dropdown_menu{
-  width: 200px;
-    top: 80px;
-    margin-right: 0;
-    background-color: #f7f5f5;
-    z-index: 1;
-  }
-  .dropdown_menu img{
-    top: 20px;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-left: 40px;
-  }
-  .toggle_btn{
-    display: none;
-  }
-
-/*.side-bar{
-       display: none;
-        float: left;
-        width: 25%;
-        height: 91%;
-        top: 80px;
-        position: absolute;
-       background: #00000020;
-        border-right: 1px solid rgba(255, 255, 255, 0.2);
-        display: flex;
-        flex-direction: column;
-        align-items: center;  
-        z-index: 1; 
-        padding-bottom: 30px;
-        
-        
-     } 
-    
-    .side-bar span{
-    background-color: rgb(168, 219, 91);
-}
-
-     .side-bar h3{
-        background-color: darkgreen;
-        color: white;
-        font-size: 30px;
-       font-family: Georgia, 'Times New Roman', Times, serif;
-       padding: 1px;
-       margin: 30px 0 0 10px;
-       
-
-}
-
-
-     .side-bar .logo_img img{
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        margin-top: 50px;
-        align-items: center;
-     }
-
-     .side-bar .logo h2{
-        font-size: 1.15rem;
-        font-weight: 600;
-        margin-left: 15px;
-        font-family:  Georgia, 'Times New Roman';
-     }
-     .side-bar .links{
-        list-style-type: none;
-        margin-top: 20px;
-        height: calc(100% - 140px);
-        color: #000;
-     }
-     .side-bar .links h4 a{
-        text-decoration: none;
-         color: maroon;
-        font-size: 20px;
-        font-weight: 700;
-        
-     }
-     .side-bar .links li{
-        display: flex;
-        align-items: center;
-        border-radius: 5px;
-    
-     }
-     .side-bar .links li:hover{
-        background: lightgray;
-     }
-     .side-bar .links li i{
-        padding: 12px 10px;
-     }
-
-     .side-bar .links li a{
-        margin-top: 8px;
-        color: #000;
-        text-decoration: none;
-        font-weight: 700;
-        padding: 5px;
-        white-space: nowrap;
-     }
-     .side-bar:hover{
-        background-color: #e7e7e7;
-     }*/
-     .homepage{
-        
-        float: right;
-        margin: 0;
-        background: #00000010;
-        margin-top: 0;
-        
-    
-     }
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2143382342376111"
+     crossorigin="anonymous"></script>
+ 
      
-     .homepage img{
-        width: 100%;
-        background: #00000020;
-        background-blend-mode: darken;
-        margin-top: 0;
-
-     }
-     .content{
-        text-align: left;
-        width: 100%;
-        margin: 0;
-        padding: 20px;
-        background-color: gainsboro;
-          
-     }
-     .homepage h2, p{
-        margin-left: 20px;
-        
-
-     }
-     .section{
-        background-color: red;
-     }
-
-     .section-intro img{
-        background-color: transparent;
-    height: 90vh;
-    background-size:cover ;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+            <!--google.com, pub-2143382342376111, DIRECT, f08c47fec0942fa0-->
    
-.section-intro  h1{
-    
-    background-color: #00000020;
-    text-align: center;
-    margin-top: 0;
-    color:  #fff;
-    font-size: 3em;
-    font-weight: 700;
-    
-     
-}
-.section-intro  header {
-   
-    background-color: transparent;
-    display: flex;
-    flex: 4;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    margin-top: 20rem;
-}
-.link-to-book-wrapper{
-    flex: 1;
-}
-
-.about-section{
-    display: flex;
-    align-items: center;
-    background-color: #c31212c0;
-    padding: 50px 30px;
-}
-  
-     .images img{
-       width: min(25rem, 100%);
-     }
-
-     .container{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 0;
-    margin-top: 4%;
-    
-}
-.container .card{
-    position: relative;
-    width: 400px;
-    height: 400px;
-    margin: 10px 5px;
-    display: flex;
-    flex-direction: column;
-    transition: 0.3s ease-in-out;
-    margin-top: 0;
-    margin-left: 5px;
-}
-.container .card .imgBx{
-    position: relative;
-    width: 300px;
-    height: 260px;
-    top: 10px;
-    left: 20px;
-}
-.container .card .imgBx img{
-    position: relative;
-    width: 100%;
-    height: 70%;
-}
-.imgBx img:hover{
-    transform: scale(1.1);
-}
-.card h2{
-    color: #04935e;
-}
-footer{
-    background-color: rgb(4, 53, 77);
-    overflow: hidden;
-    position: relative;
-    height: 40%;
-    float: right;
-    
-}
-hr{
-    background-color: red;
-}
-
-
-
-     
-    @media(max-width:770px){
-        .navbar .links{
-            display: none;
-        }
-        .toggle_btn{
-            display: block;
-        }
-        .logo {
-            background-color: darkgreen;
-            color: white;
-            font-size: 16px;
-            
-        }
-        
-        .side-bar{
-            display: none;
-            top: 80px;
-            position: absolute;
-            height: 90vh;
-            background-color: #00000020;
-            margin-left: 0;
-            padding-bottom: 0;
-            
-
-        }
-        .side-bar .logo_img img{
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-        }
-       .side-bar:hover{
-            width: 280px;
-            background-color: rgb(250, 250, 252);
-        
-            opacity: 100%;
-            transition: 1s ease ;
-
-        }
-        .side-bar .links h4{
-            font-size: 20px;
-            text-align: center;
-        }  
-        .side-bar .links li a
-        {   font-weight: 400px;
-            line-height: 1;
-            color: #fff;
-            display: block;
-            margin-left: 20px;
-
-        }
-
-        .side-bar:hover  li a{
-            display: block;
-            color: #000;
-        }
-        .side-bar .links li i{
-            padding-left: 30px;
-            font-size: 15px;
-            
-        }
-        .container{
-            width: 100%;
-        }
-        .homepage{
-            width: 100%;
-        }
-        
+      <link rel="stylesheet" href="style.css">
+      <style type="text/css"></style>
       
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                 <a href="index.html"><h2>The Region</h2></a>
+            </div>
 
-           
-           .navbar .links ul li{
-            padding: 0;
-           }
-           .navbar .links ul li a{
-            font-size: 15px;
-            display: flex;
-    
-           
-           }
-            .side-bar{
-                width: 25%;
-            }
-            .homepage{
-                width: 100%;
-            }
-          
-            .side-bar .links li a{
-                font-size: 12px;
-                margin-left: 8px;
-            }
-            hr{
-                display: none;
-            }
-            .side-bar h3{
-                font-size: 25px ;
-                padding: 20px;
-            }
-           
-            .side-bar .logo_img img{
-        
-                width: 100px;
-                height: 100px;
-            }
-             .container-a{
-                width: 100%;
-             }
-            .container .card .imgBx{
-             width: 260px;
-             height: 260px;
-           top: 10px;
-           left: 20px;
-           display: grid;
-           grid-template-columns: 2 1fr;
-            }
-            .container .card .imgBx img{
-                width: 100%;
-            }
-           
-           
-            .footer_content{
-                padding: 0;
-                font-size: 16px;
-            }   
-        }    
-    
-    @media(max-width:460px){
-        .side-bar{
-            display: none; 
-            
-        }
-        .footer_logo {
-            text-align: center;
-            padding: 0;
-            font-size: 20px;
-
-        }
-
-      
-      
-    .section-intro header h1{
-       font-size: 35px;
-    
-       
-    }
-    .section-intro img{
-    height: 80vh;
-    }
-        .footer_content .info {
-              color: #04935e;
-              margin-left: 5px;
-        }
-        .footer_content h3{
-            margin-top: 20px;
-            font-size: 18px;
-            padding-left: 5px;
-        }
-        
-    }
-        
-       </style>
-</head>
-<body>
-    <header>
+            <div class="navbar">
+                <ul class="links">
+                    <li><a href="index.html">General</a></li>
+                    <li><a href="../Documents/life.html">Life</a></li>
+                    <li><a href="../Documents/business.html">Business </a></li>
+                    <li><a href="../Documents/sports.html">Sports</a></li>
+                    <li><a href="../Documents/technology.html">Technology</a></li>  
                    
-        <div class="logo">
-            <a href="index.html"></a><span>//</span>Natured</a>
-       </div>
-
-       <div class="navbar">
-           <ul class="links">
-                <li><a href="index.html">Home </a></li>
-               <li><a href="fruits.html">Fruits</a></li>
-                <li><a href="Carbohydrates.html">Carbohydrates </a></li>
-               <li><a href="Beverage.html">Beverage </a></li>
-               <li><a href="vegetable.html">Vegetables </a></li>
-               <li><a href="proteins.html">Proteins</a></li>
-               <li><a href="spices.html">Spices </a></li> 
-               <li><a href="Fats.html">Fats</a></li>
-               
-           </ul>
-       </div>
-
-       <div class="toggle_btn">
-        <i class="fa-solid fa-bars"></i>      
-    </div>
+                </ul>
+            </div>
 
 
-    <div class="dropdown_menu"> 
-        <div class="logo_img">
-                
-       
+               <!--social icons
+               <div class="social-icons">
+                <ul>
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+                    <li><a href="https://facebook.com/musconews.com"><i class="fa-brands fa-facebook"></i> </a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i> </a></li>
+                    <li><a href="#"><i class="fa-brands fa-whatsapp"></i> </a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i> </a></li>
+                    <li><a href="#"><i class="fa-solid fa-envelope"></i> </a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                </ul>
+                </div>-->
 
-       
-
-            <br>
-        
-            <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="aboutUs.html">About</a></li>
-            <li><a href="contacts.html">Contacts</a></li>
-            <li><a href="ppolicy.html">Privacy Policy</a></li>
-            <br>
-            <hr>
-            <br>
-            <li><a href="fruits.html">Fruits & Salad</a></li>
-            <li><a href="Carbohydrates.html">Carbohydrates</a></li>
-            <li><a href="Beverage.html">Beverage</a></li>
-            <li><a href="vegetable.html">Vegetables</a></li>
-            <li><a href="proteins.html">Proteins</a></li>
-            <li><a href="spices.html">Spices</a></li>
-            <li><a href="proteins.html">Proteins</a></li>
-           
-            </ul>
-    </div>
-</div>
-</header>
-
-
-       <hr>
-  
-    <!--<div class="container-a">
-        
-        <aside class="side-bar">
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>      
+                </div>
+         
             
-           
-            <div class="logo_img">
-                
-        <img src="../IMAGES N/images (56).jpeg" alt="">
+                <div class="dropdown_menu"> 
+                       <h3>Menu</h3>
+                        <hr>
+                        <ul>
+                        <li><a href="index.html">General</a></li>
+                        <li><a href="Documents/life.html">Life </a></li>
+                        <li><a href="Documents/business.html">Business</a></li>
+                        <li><a href="Documents/sports.html">Sports</a></li>
+                        <li><a href="Documents/technology.html">Technology</a></li>
+                        <li><a href="Documents/aboutUs.html">About</a></li>
+                        <li><a href="Documents/contacts.html">Contacts</a></li>
+                        </ul>
+                </div>
             </div>
-          <ul class="links">
-            <h4><a href="https://www.wikihow.com/essentialnutrients">Essential Nutrients</a></h4>
-            <hr>
-
-            <ul>
-                <li><a href="fruits.html">Fruits & Salad</a></li>
-                <li><a href="Carbohydrates.html">Carbohydrates</a></li>
-                <li><a href="Beverage.html">Beverage</a></li>
-                <li><a href="vegetable.html">Vegetables</a></li>
-                <li><a href="proteins.html">Proteins</a></li>
-                <li><a href="spices.html">Spices</a></li>
-                <li><a href="Fats.html">Fats</a></li>
-             </ul>
-          
-             
-
-        </aside>
-    </div>-->
-    
-    
-               <div class="homepage">
-
-                
-               
-
-                <section class="section-intro">
-                      <img src="../IMAGES N/photo-1554980291-c3e7cea75872.jpeg" alt="">  
-
-                      <section class="section-intro">
-                        <header>
-                          <h1>HOME OF FOODIE FACTS</h1>
-                        </header>
-                            
-                          
-                        
-                   </section>
-                        
-               </section>
-
-
-               <div class="content">
-                <h2> The Essential Nutrients Found in organic food</h2>
-                <p>Healthy body requires healthy diet, and healthy diet is found from natural
-                     foods which are fully packed with high nutritional value.
-                    Natural foods are linked to traditional diet by which most of them are medicinal.
-                     Keep in mind your body should repair 
-                itself and this is done by consuming good healthy food.</p>
+        </header>
         
-    
-            </div>
-        </div>
-
-
-        
-
-                <div class="container">
-        <div class="card">
-
-
-           
-
-            <div class="imgBx">
-                <a href="Carbohydrates.html"><img src="../IMAGES N/IMG20240529090136.jpg" alt=""></a>
-                <h2>Sweet potato</h2>
-                <p>Gluten-free flour</p>
-
-            </div>
-
+        <div class="scrollmenu" >
+            <a href="index.html">Home |</a>
+            <a href="Documents/life.html">Lifestyle |</a>
+            <a href="Documents/business.html">Business |</a>
+            <a href="Documents/sports.html">Sports |</a>
+            <a href="Documents/technology.html">Technology |</a>
         </div>
         
-        <div class="card">
-            <div class="imgBx">
-                <a href="Fats.html"><img src="../IMAGES N/Rabbit meat.jpg" width="200px" alt=""></a>
-                <h2>Rabbit meat</h2>
-                <p>Simple to cook rabbit meat using animal fat</p>
-
-            </div>
-            
-
-        </div>
-        
-
-
-        <div class="card">
-            <div class="imgBx">
-                <a href="vegetable.html"><img src="../IMAGES N/images (50).jpeg" ></a>
-                <h2>Salad</h2>
-                <p>vegetable salad rich in protein
-            </div>
-            </div>
-            <hr>
-            <div class="card">
-                <div class="imgBx">
-                    <a href="fruits.html">
-                        <img src= "../IMAGES N/images (47).jpeg"  alt=""></a>
-                    <h2>Jackfruit</h2>
-                    <p>High nutritional value of jackfruit.</p>
+        <h4>Advertisement</h4>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2143382342376111"
+        crossorigin="anonymous">         
+    </script>
+      <!-- Musco News -->
+      <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-2143382342376111"
+        data-ad-slot="7335241488"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+         
+      
     
-                </div>
-    
-            </div>
-            
-
-
-            <div class="card">
-                <div class="imgBx">
-                    <a href="spices.html"><img src="../IMAGES N/photo-1615484478243-c94e896edbae.jpeg" alt=""></a>
-                    <h2>Ginger</h2>
-                    <p>The reason why ginger root stands out </p>
-    
-                </div>
-    
-            </div>
-            
-            <div class="card">
-                <div class="imgBx">
-                    <a href="Beverage.html"><img src="../IMAGES N/cup of tea.jpg" width="200px" alt=""></a>
-                    <h2>Tea</h2>
-                    <p>How a cup of coffee and tea stimulates our body.</p>
-    
-                </div>
-    
-            </div>
-            
+      
+        <!--main-->
+        <section class="banner">
+            <div class="banner-main-content">
                 
-
-
-            <div class="card">
-                <div class="imgBx">
-                    <a href="proteins.html"><img src="../IMAGES N/images (51).jpeg" alt=""></a>
-                    <h2> Bone broth</h2>
-                    <p>Source of collagen for healthy hair, skin and nails</p>
-    
-                </div>
-    
-            </div>
-                </div>
-           
-             
-
-        <footer>
-            <div class="footer_content">
-               <div class="footer_container">
-                  <!--contact-->
-                 
-                    <div class="col contact">
-
-                            <div class="footer_logo">
-                                <a href="index.html"></a><span>//</span>Natured</a>
-                           </div> 
-                      
-                      
-
-                        <!--<h1>Village taste</h1>-->
-                        <h3>Support this food and nutrition website improve by giving your opinion</h3><br><br>
-
-                         <p><ion-icon class="icon" name="mail"></ion-icon>musconews.com</p>
-                         <p><ion-icon class="icon" name="location"></ion-icon>Kakamega county, Kenya </p>
-                         
-
-            <div class="social_media_links">
-                 <a href="http://facebook.com" target="_blank">
-                <ion-icon class="icon" name="logo-facebook"></ion-icon>
-            </a>
-            <a href="http://instagram.com" target="_blank">
-                <ion-icon class="icon" name="logo-instagram"></ion-icon>
-            </a>
-            <a href="http://twitter.com" target="_blank">
-                <ion-icon class="icon" name="logo-twitter"></ion-icon>
-            </a>
-            </div>
-                    </div>
-        
-
-
-
-                 
-
-                      <div class=" info">
-                        <h2>Info</h2>
-                        <p><a href="index.html">Home</a></p>
-                        <p><a href="contacts.html">Contacts </a></p>
-                        <p><a href="aboutUs.html">About</a></p>
-                        <p> Terms and conditions</p>
-                        <p><a href="ppolicy.html">Privacy Policy</a></p>
-                     </div>
-            
-                     
-                         <div class="newsletter">
-                          
-                         <h3>Get updates on nutrition tips</h3>
-                          <form action="https://formsubmit.co/musconews@gmail.com" method="post" class="newsletter-form" >
-                              <input type="text" placeholder="Your Name" />
-                          <input type="text" placeholder="Your Email" />
-                          <input type="submit" value="Submit">  
-                          <input type="hidden" name="_autoresponse" value="successful">
-                          </form>
-                          </div>
-                        </div>
-            
-            
-            
-                       <!--footer copyright-->
-                     <div class="footer_copyright">&copy; Copyright 2024 Natured</div>
-                        </div>
-                        
+                
+                <iframe src="carousel.html" width="460px" height="340" >
                     
-                     </footer>  
-               
-               
-               
-               <script src="script.js"></script>
+                </iframe>
+                
+                    
+                      <h1>Top Headlines</h1>
+                    
+                <div class="current-news-head">
+                     <a href="https://uni.cf/3ZMAfa5">
+                        <h2>USA</h2>
+                        <h3>Trump says going to jail for gag order violation would be a 'great honor,' compares himself to Mandela</h3>
+                        <span>|CNBC</span>
+                    </a>
+                    
+                    <hr>
+                     <a href="https://thegurdian.com/world/2023/oct/09/how-did-hamas-manage-to-carry-out-its-rampage-through-southern-israel ">
+                        <h2>HAMAS</h2>
+                        <h3>How did militants manage to carry out rampage...</h3>
+                        <span>|Gurdian</span>
+                    </a>
+                    
+                    <hr>
+                
+                    <a href="https://africa.businessinsider.com/local/markets/top-african-countrries-for-real-estate-investment/5fdzbsj ">
+                        <h2>KENYA</h2>
+                        <h3>Top African countries for real estate investment.</h3>
+                        <span>|Nation</span>
+                    </a>
+                
+                </div>
+                <hr>
+                </div>
+                
+                <div class="banner-sub-content">
+                    <h3>Latest Stories</h3>
+                     <div class="hot-topic">
 
-               <script type="script.js"></script>
-                  <script type="module" src="https://unpkg.com/ionicons@7.1.
-              0/dist/ionicons/ionicons.esm.js"></script>
-              
-              <script nomodule src="https://unpkg.com/ionicons@7.1.
-              0/dist/ionicons/ionicons.esm.js">
-              </script>
-              
-  
+                        <a href="Documents/technology.html">
+                            <img src="IMAGES/tIMAGES/istockphoto-1310441327-612x612.jpg" alt="">
+                            <div class="hot-topic-content">
+                                <h2>Microsoft unveils initiatives to strengthen cybersecurity</h2>
+                                <h5>analyticsinsight</h5>
+                            </div>
+                            </a>
+                     </div>
+                     <hr>
+                           
+             <div class="hot-topic">
+                <a href="https://falconsafaris.com/african-destinations ">
+        <img src="IMAGES/tIMAGES/istockphoto-1417468120-170667a.webp" >
+
+        <div class="hot-topic-content">
+            <h2>Luxury safari Africa destinations:Explore Africa</h2>
+            <h5>|falconsafaris</h5>
+        </div>
+                </a>
+            </div>  
+<hr>
+
+<div class="hot-topic">     
+    <a href="Documents/life.html">
+        <img src="IMAGES/150226-helena-rubinstein-04-677x1024.jpg" alt="">
+        <div class="hot-topic-content">
+        <h2> Meet a woman who built an empire on lotion and lipstic! </h2>
+        <h5>LIFE magazine</h5>
+    </div>
+    </a>   
+</div>
+<hr>
+
+
+<div class="hot-topic">
+    <a href="https://cnbc.com/2024/04/05/elon-musk-says-tesla-will-unveil-its-robotaxi-on-aug-8-shares-pop.html ">
+    <img src="IMAGES/tinfied (1)/tinified (1)/images (3).jpeg" alt="">
+
+    <div class="hot-topic-content">
+        <h2>Elon Musk says Tesla will unvail its robotaxi on Aug...</h2>
+        <h5>CNBC</h5>
+         </div>
+    </a> 
+</div>
+<hr>
+</div>
+    </section>
+   
+   <main >
+   
+
+       <section class="main-container-left">
+        <a href="https://youtube.com/documentary"><h2>Documentary</h2></a>  
+        <div class="container-top-left">
+
+           <article>
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/h8nfvb8mSRE?si=nFpIOjUE9UcPekJ_&amp;controls=0" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+     <h3> Quest for the Uncharted World: Sulawesi, Indonesia | </h3><br>
+     <p>YouTube</p>
         
+     <hr>
+    
+           
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/evWEuVR1XIs?si=dBysiiNNkho8yuX3&amp;controls=0"
+      title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+     <h3>Gold Mafia - Episode 1 - The Laundry Service I Al Jazeera Investigations  </h3>
+     <p>Al Jazeera</p>
+        </div>
+    </article>
+       <hr>
+          
+        
+    <div class="container-bottom-left">
+        <a href="  https://bloomberg.com/news/articles/2024-02-14/jeff-bezos-reaps-florida-tax-benefit-with-4-billion-amazon-sale?utm_source=website&utm_medium=share&utm_campaign=copy ">
+            <h2>Technology</h2>
+        </a>
+        <hr>
+        <article>
+            <a href="Documents/technology.html">
+            <img src="IMAGES/tIMAGES/istockphoto-508289586-612x612.jpg" >
+            <div>
+                <h3>Coding skills that will set you apart from other applicants</h3>
+                <p>If you are a Software developer, Cybersecurity analyst or 
+                Web designer, you must be </p>
 
+                     <a href="https://analyticsinsight.net/10-coding-skills-that-will-set-you-apart-from-other-applicants/">Read More <span>..</span>
+            </div> 
+            </a>
+        </article>
+        <hr>
+
+            <article>
+                <a href="https://fox10phoenix.com/video/1287191 ">
+                <img src="IMAGES/tIMAGES/istockphoto-480652712-612x612.jpg" alt="">
+                <div>
+                    <h3>What's next for new cars? Ford has the answer</h3>
+                    <p> Ford has restructed its vision for cars.<br>
+                         With emphasis  on capability and fuel economy focused options,<br>
+                    the latest lineup is designed wth something for everyone</p>
+    
+             <a href=" https://fox10phoenix.com/video/1287191 ">Read More <span>..</span>
+                </div>
+                </a>
+            </article>
+            <hr>
+    </div>
+       </section>
+
+
+  
+   
+
+       <section class="main-container-right"> 
+        <h2>Life and Style</h2>
+        <article>
+            <a href="https://brightside.me/articles/19-essential-facts-that-might-be-useful-in-your-everyday-life-803235/" >
+            <h4>bright
+                side</h4>
+            <div>
+                <h2> Did You Know</h2>
+                <p>If you read a speech before you go to bed, You will Remember it Better in the Morning</p>
+
+                    <a href="https://brightside.me/articles/19-essential-facts-that-might-be-useful-in-your-everyday-life-803235/ ">Read More<span>..</span>
+                    
+            </div>
+            <img src="IMAGES/tIMAGES/istockphoto-1332965328-612x612.jpg" alt="">
+            </a>
+        </article>
+
+        <article>
+            <a href="https://netflix.com/ke/title/81133260?preventIntent=true ">
+             <h4>foodand<br>wine</h4>
+            <div>
+                <h2>Ham Sandwiches</h2>
+                <p>15 ham Sandwiches to make for any meal of the day</p>
+                  <a href="https://foodandwine.com/ham-sandwiches-8358219  ">
+                    Read More<span>..</span>      
+            </div>
+            <img src="IMAGES/1712139277418646423759187432839.webp" alt="">
+            </a>
+        </article>  
+
+        <article>
+            <a href="https://my.clevelandclinic.org/health/treatments/21213-blood-types ">
+            <h4>Google</h4> 
+            <div>
+
+                <h2>People with this Blood group always have strongest immunity</h2>
+                <p>When a doctor talks about your blood type he or she usually means the ABO type and the Rhesus(Rh) factor</p>
+
+                    <a href="https://my.clevelandclinic.org/health/treatments/21213-blood-types">Read More<span>..</span>
+                    
+            </div>
+            <img src="IMAGES/tIMAGES/pexels-photo-863926.jpeg" alt="">
+            </a>
+        </article>
+
+        <article>
+            <a href="https://pinterest.com/pin/209065607694471092 ">
+            <h4>Newshub</h4>
+            <div>
+                <h2>Natural hair tips to take care of your scalp</h2>
+                <p>An integral part of any natural hair is taking care of your scalp</p>
+
+                    <a href="https://pinterest.com/pin/209065607694471092">Read More<span>..</span>       
+            </div>
+            <img src="IMAGES/tIMAGES/istockphoto-464575644-612x612.jpg" alt="">
+            </a>
+        </article>
+
+
+       
+    
+
+            <div class="advert">
+            <h3>Easy Bread Baking</h3> 
+
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/X1vSF67A7lg?si=RY91HPb78mRBnQ_U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <p>How To Make A Super Soft Milk Bread Loaf | Easy To Make  </p>
+            <p>YouTube</p>
+            </div>
+
+            <div class="bottom">
+
+              
+                <h1>Sports</h1>
+
+                <a href="https://www.nbcsports.com/soccer/news/usmnt-vs-mexico-concacaf-nations-league-final-how-to-watch-live-stream-link-team-news">
+                    <img src="../IMAGES/17111903585522165268370927229242.jpg" alt="">
+                <p>USMNT vs Mexico, CONCACAF Nations League final:How to watch live, stream... </p>
+                <h5>nbcsports.com</h5>
+                    </a> 
+                <hr>
+
+                <a href="https://pulsesport.co.ke/athletics/story/ferdinand-omanyala-hints-at-running-more-200m-races-this-season-2024040803070748235  ">
+                    <img src="IMAGES/17125966968103090688754775336889.jpg" alt="">
+                <p> Ferdinand Omanyala hints at running more 200m races this season.</p>
+                  <h5>pulsesport</h5>
+                    </a>
+                <hr>
+
+                        
+                <a href="https://nbcsports.com/soccer/news/fa-cup-2023-2024-how-to-watch-third-round-draw-schedule-results-video-highlights">
+                    <img src="../IMAGES/17111902485873521385851874228044.jpg" alt="">
+                <p>FA Cup 2023-24:Semifinal draw & schedule,quaterfinal results.</p>
+                <h5>nbcsports.com</h5>
+                    </a>
+                <hr>
+
+                <a href="https://olympics.com/en/news/boxing-mixed-martial-arts-biaggio-ali-walsh-grandson-muhammad-ali-interview  ">
+                    <img src="IMAGES/17121370271817331833698186628806.avif" alt="">
+                    <p>Growing up as the grandson of Muhammad Ali was a double-edged sword...</p>
+                    <h5>Olympics.com</h5>
+                </a>
+                <hr>
+            </div>
+
+       </section>
+         
+
+       
+        
+   
+       <div class="Leisure">
+        <a href="QUIZ-GAME/quiz.html">
+            <p><span>Test the level of your IQ</span><br>by</p> 
+            <p>Answering 5 simple questions!</p>    
+        </a>
+       </div>
+    
+   </main>
+    
+   <footer>
+      <div class="footer_content">
+         <div class="footer_container">
+            <!--contact-->
+           <div class="col contact">
+
+            <div class="logo">
+                <a href="index.html"><h2>The Region</h2></a>
+           </div>
+           
+                <p><a href="index.html">Home</a></p>
+                <p><a href="Documents/life.html">Life</a></p>
+                <p><a href="Documents/business.html">Business</a></p>
+                <p><a href="Documents/sports.html">Sports</a></p>
+                <p><a href="Documents/technology.html">Technology</a></p>
+                <br><br>
+
+        
+           <!--social links
+           <div class="social_media_links">
+                <a href="http://facebook.com/musconews.com" target="_blank">
+               <ion-icon class="icon" name="logo-facebook"></ion-icon>
+           </a>
+           <a href="http://instagram.com" target="_blank">
+               <ion-icon class="icon" name="logo-instagram"></ion-icon>
+           </a>
+           <a href="http://twitter.com/musconews.com" target="_blank">
+               <ion-icon class="icon" name="logo-twitter"></ion-icon>
+             </a>
+    <a href="http://youtube.com/oplusCojou" target="_blank">
+        <ion-icon class="icon" name="logo-youtube"></ion-icon>
+             </a>  
+             
+         </div>-->
+           </div>
+
+        <!--info--> 
+   <div class="col info">
+      <h2>Info</h2>
+      <p><a href="Documents/contacts.html">Contacts </a></p>
+      <p><a href="./Documents/aboutUs.html">About</a></p>
+      <p> Terms and conditions</p>
+      <p><a href="ppolicy.html">Privacy and policy</a></p>
+   </div>
+   
+       <div class="newsletter">
+        <h2>Get the latest news and information around the world.</h2>
+       <h3>Subscribe to our Newsletter</h3>
+        <form action="https://formsubmit.co/musconews@gmail.com" method="post" class="newsletter-form" >
+            <input type="text" placeholder="Your Name" />
+        <input type="text" placeholder="Your Email" />
+        <input type="submit" value="Submit">  
+        <input type="hidden" name="_autoresponse" value="successful">
+        </form>
+        </div>
+      </div>
+     <!--footer copyright-->
+   <div class="footer_copyright">&copy; Copyright 2024 TheRegion</div>
+      </div>
+   </footer>        
+
+  <!--<div>
+    <i class="fa-solid fa-house"></i>
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-youtube"></i>
+    <i class="fa-brands fa-whatsapp"></i>
+    <i class="fa-brands fa-tiktok"></i>
+    <i class="fa-solid fa-phone"></i>
+    <i class="fa-solid fa-envelope"></i>
+    <div class="icon">
+        <a href="http://facebook.com">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+    </div>-->
+
+<script src="script.js"></script>
+
+ <script type="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.
+0/dist/ionicons/ionicons.esm.js"></script>
+
+<script nomodule src="https://unpkg.com/ionicons@7.1.
+0/dist/ionicons/ionicons.esm.js">
+</script>
 
 </body>
 </html>
